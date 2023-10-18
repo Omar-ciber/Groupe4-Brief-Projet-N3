@@ -26,6 +26,8 @@
     height: 70vh;
     justify-content: center;
     transform: translateX(-270px);
+    z-index: 3;
+
 }
 #social a{
     width: 300px;

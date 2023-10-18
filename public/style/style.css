@@ -16,3 +16,7 @@
 .bgGris{
     background-color: var(--gris);
 }
+
+.orange{
+    color: var(--orange);
+}

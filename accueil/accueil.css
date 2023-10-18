@@ -16,3 +16,24 @@
 #btn-contact{
 
 }
+#services .card{
+    height: 40vh;
+}
+#services .card i{
+    font-size: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 985px) {
+
+    #services #row-cols-2{
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        justify-content: center;
+        width: 100%;
+    }
+    #services #row-cols-2 .card{
+        width: 350px !important;
+
+    }
+    
+}

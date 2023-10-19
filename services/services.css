@@ -346,3 +346,116 @@ footer{
     transition: 2s ease;
 }
 /* footer */
+
+@media(max-width: 800px){
+
+    .services{
+        margin: 0 15px;
+    }
+
+    .servicesContent h3{
+        font-size: 24px;
+    }
+
+    .servicesContent p{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .servicesCart {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 50px;
+        row-gap: 50px;
+    }
+
+    footer{
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footerContent{
+        display: block;
+    }
+
+    .footerContent .logoFooter {
+        background-color: white;
+        position: normal;
+        bottom: 0;
+        width: 100%;
+        display: none;
+        border: 2px solid rgb(47, 0, 128);
+    }
+
+    .footerContent .logoFooter img{
+        width: 100% !important;
+        border: 1px solid green;
+    }
+
+    .contentFooter{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .contentFooter .footerIpt {
+        display: block !important;
+        border: none !important;
+    }
+
+    .contentFooter .footerIpt input,button{
+        width: 100% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .contentFooter .footerIpt input{
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    .contentFooter  .copyrightFooter{
+        display: block !important;
+        text-align: center;
+    }
+
+}
+
+/* 700px and 1100px */
+
+@media only screen and (min-width: 700px) and (max-width:930px){
+    .servicesCart {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 50px;
+        row-gap: 50px;
+    }
+
+    footer{
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footerContent{
+        display: block;
+    }
+
+    .footerContent .logoFooter {
+        background-color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .contentFooter .footerIpt input{
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    .contentFooter{
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 !important;
+    }
+}

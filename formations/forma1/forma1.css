@@ -21,6 +21,32 @@
 
 /* main */
 
+/* Styles for wrapping the search box */
+
+.d-flex .btn{
+  border-radius: 0 20px;
+}
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+.input-group{
+    width: 25% !important;
+    
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
 
 
 

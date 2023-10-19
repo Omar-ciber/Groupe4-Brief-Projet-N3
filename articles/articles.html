@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="../public/style/footer.css">
     <link rel="stylesheet" href="articles.css">
 
-    <title>Accueil</title>
+    <script src="articles.js" defer></script>
+
+    <title>Articles</title>
 </head>
 <body>
     <div id="social">
@@ -75,26 +77,9 @@
                                     ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
                                 </p>
                                 <div>
-                                    <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Voir plus</button>
+                                    <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="first">Voir plus</button>
                                 </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header border-0">
-                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        ...
-                                      </div>
-                                      <!-- <div class="modal-footer border-0">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Understood</button>
-                                      </div> -->
-                                    </div>
-                                  </div>
-                                </div>
+                              
                             </div>
                         </div>
                     </div>
@@ -109,7 +94,7 @@
                                             ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
                                         </p>
                                         <div>
-                                            <a href="" class="text-decoration-none text-white"><button class="btn  border border-2 border-white radiusButton">Voir plus</button></a>
+                                          <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="second">Voir plus</button>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +108,7 @@
                                             ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
                                         </p>
                                         <div>
-                                            <a href="" class="text-decoration-none text-white"><button class="btn  border border-2 border-white radiusButton">Voir plus</button></a>
+                                          <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="third">Voir plus</button>
                                         </div>
                                     </div>
                                 </div>
@@ -251,8 +236,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-12" id="grande">
-                        <div class="card border-0 shadow">
-                          </video>
+                        <div class="card border-0 shadow">                        
                           <video autoplay muted controls>
                             <source src="https://v4.cdnpk.net/videvo_files/video/free/video0455/small_watermarked/_import_6074abda2c1d16.29497953_FPpreview.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -369,6 +353,89 @@
         </section>
         
     </main>
+
+      <!-- Modal pour detail article-->
+      <div class="modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card border-0 shadow">
+                <img src="https://img.freepik.com/photos-premium/abstract-book-and-open-laptop-generative-ai_786587-12901.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais" class="img-fluid" id="modalImage" alt="" srcset="">
+                <div class="card-body">
+                  <h5 class="card-title">Angular</h5>
+                  <p class="my-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora
+                      reiciendis libero voluptate!.Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                  </p>
+                  <p class="my-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora
+                      reiciendis libero voluptate!.Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                  </p>
+                  <div class="d-flex justify-content-end mt-3">
+                    <button class="btn border border-2 radiusButton" data-bs-toggle="modal" data-bs-target="#comment-modal" id="comment-btn">Commenter</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal pour commmentaire -->
+    <div class="modal fade modal-lg" id="comment-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="title d-flex justify-content-center mb-3">
+              <div class="d-flex">
+                  <div id="circle">
+                      <i class="fa-regular fa-circle orange"></i>
+                  </div>
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+              </div>
+             <h6 class="mx-4">Commentaire sur l'article <span id="article-name"></span></h6>
+             <div class="d-flex">
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+                 <div id="circle">
+                     <i class="fa-regular fa-circle orange"></i>
+                 </div>
+              </div>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="message" aria-describedby="button-addon2" id="commentInput">
+                <button class="btn  rounded" type="button" id="send-button">Envoyer &nbsp; <i class="bi bi-send"></i></button>
+              </div>
+            </form>
+            <div class="container">
+              <div class="d-flex justify-content-center" id="list">
+                <div id="commentList" class="mt-3"> 
+                  <!-- Les commentaires seront ajoutés ici --> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <footer>
       <div class="footerContent mx-md-5 row">
           <div class="col-12 col-md-4 logoFooter border">

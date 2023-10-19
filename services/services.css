@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    border: 1px solid transparent;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -94,9 +98,14 @@ nav a{
 
 /* flipCard */
 
+header{
+    border: 2px solid orangered;
+}
 
 /* main */
-
+main{
+    border: 1px solid red;
+}
 /* section bannière */
 .banniere{
     background-image: url(../public/images/banniere-technologie-orange.jpg);
@@ -150,7 +159,6 @@ nav a{
 }
 
 .servicesCart .carte{
-    /* border: 1px solid var(--orange); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,7 +355,14 @@ footer{
 }
 /* footer */
 
-@media(max-width: 800px){
+@media(max-width: 700px){
+
+    .banniere h1{
+        font-size: 35px;
+    }
+    .banniere p{
+        font-size: 16px;
+    }
 
     .services{
         margin: 0 15px;
@@ -369,6 +384,34 @@ footer{
         row-gap: 50px;
     }
 
+    .carte .front-content i{
+        font-size: 18px;
+        margin-bottom: 12px !important;
+    }
+
+    .back-content p{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .back-content button {
+        width: 50% !important;
+        font-size: 18px;
+        background-color: white;
+        color: var(--orange) !important;
+        font-weight: bold;
+    }
+
+    .modal-body h4{
+        font-size: 20px !important;
+    }
+
+    .modal-body .row{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     footer{
         width: 100% !important;
         padding-top: 20px;
@@ -376,22 +419,17 @@ footer{
     }
 
     .footerContent{
-        display: block;
+        display: block !important;
+
     }
 
     .footerContent .logoFooter {
-        background-color: white;
-        position: normal;
-        bottom: 0;
+        background-color: brown;
+        border: 1px solid;
         width: 100%;
         display: none;
-        border: 2px solid rgb(47, 0, 128);
     }
 
-    .footerContent .logoFooter img{
-        width: 100% !important;
-        border: 1px solid green;
-    }
 
     .contentFooter{
         width: 100%;
@@ -423,12 +461,54 @@ footer{
 
 /* 700px and 1100px */
 
-@media only screen and (min-width: 700px) and (max-width:930px){
+@media only screen and (min-width: 701px) and (max-width:930px){
+    .modal-body h4{
+        font-size: 20px !important;
+    }
+
+    .modal-body .row{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .modal-body .row .cl{
+        width: 100%;
+    }
+    .servicesContent h3{
+        font-size: 30px;
+    }
+
+    .servicesContent p{
+        font-size: 20px;
+        width: 100%;
+    }
+
     .servicesCart {
         display: grid;
         grid-template-columns: 1fr 1fr !important;
         gap: 50px;
         row-gap: 50px;
+    }
+
+    .servicesCart .carte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40% 5%;
+    }
+
+    .back-content p{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .back-content button {
+        width: 50% !important;
+        font-size: 18px;
+        background-color: white;
+        color: var(--orange) !important;
+        font-weight: bold;
     }
 
     footer{
@@ -438,7 +518,7 @@ footer{
     }
 
     .footerContent{
-        display: block;
+        display: flex;
     }
 
     .footerContent .logoFooter {
@@ -448,10 +528,10 @@ footer{
         width: 100%;
     }
 
-    .contentFooter .footerIpt input{
+    /* .contentFooter .footerIpt input{
         border: 1px solid white;
         border-radius: 15px;
-    }
+    } */
 
     .contentFooter{
         margin-top: 20px;

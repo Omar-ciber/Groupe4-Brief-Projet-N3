@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    background: linear-gradient(0deg, #0000008f, #0000008f), url("image_a-propos/bcg_propos.png");
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    background-position: center;
+    color: white;
+    margin-top: 100px;
+
+}
+#banner .banner-texte{
+    margin-left: 80px !important;
+}
+
+.badge1{
+    background-color: #0B3255;
+    height: 80px;
+    width: 20%;
+    font-size: 50px;
+    color: white;
+    
+}
+.badgeprim{
+    background-color: #E94D1A;
+    height: 80px;
+    width: 20%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.badgetext{
+    font-size: 15px;
+    width: 5%;
+}
+.imageabout{
+    height: fit-content;
+}

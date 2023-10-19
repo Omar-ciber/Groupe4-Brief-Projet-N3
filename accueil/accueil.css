@@ -16,3 +16,72 @@
 #btn-contact{
 
 }
+#services .card{
+    height: 40vh;
+}
+#services .card i{
+    font-size: 60px;
+}
+
+
+/* Section about */
+.badge1{
+    background-color: #0B3255;
+    padding: 10px 30px;
+    font-size: 50px;
+    color: white;
+    
+}
+.badgeprim{
+    background-color: var(--orange);
+    padding: 10px 30px;
+    font-size: 50px;
+    color: white;
+}
+.badgetext{
+    font-size: 15px;
+    width: 5%;
+}
+.imageabout {
+    height:fit-content;
+    
+
+}
+
+#about .card-body{
+    text-align: justify;
+}
+.imageabout img{
+    height: 70vh;
+    width: 100%;
+}
+
+/* section why */
+
+/* section exploit */
+
+#exploit .card{
+    background-color: var(--transparent) !important;
+    height: 40vh;
+}
+#exploit .card i{
+    font-size: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 985px) {
+
+    #services #row-cols-2{
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        justify-content: center;
+        width: 100%;
+    }
+    #services #row-cols-2 .card{
+        width: 350px !important;
+
+    }
+    #image-why{
+        height: 50vh;
+    }
+    
+}

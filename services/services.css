@@ -25,6 +25,75 @@ nav a{
     color: black !important;
 }
 
+/* flipCard */
+.test{
+    /* border: 2px solid rgb(119, 0, 255); */
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.front,.back {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid goldenrod; */
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s linear;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.back {
+    background-color: var(--orange);
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content p {
+    width: 90% !important;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.back-content button{
+    width: 60%;
+    font-size: 20px;
+    background-color: white;
+    color: var(--orange) !important;
+    font-weight: bold;
+}
+
+.test:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.test:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+/* flipCard */
+
 
 /* main */
 
@@ -75,35 +144,98 @@ nav a{
 
 .servicesCart{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 50px;
     row-gap: 50px;
 }
 
 .servicesCart .carte{
-    border: 1px solid var(--orange);
+    /* border: 1px solid var(--orange); */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8% 4%;
+    padding: 30% 5%;
 }
 
-.servicesCart .carte .cart-content{
+.servicesCart .carte .front-content{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 20px;
 }
 
-.servicesCart .carte .cart-content .cartText{
+.servicesCart .carte .cartText{
     font-size: 20px;
     color: var(--orange);
     font-weight: 600;
 }
 
-.servicesCart .carte .cart-content .iconService{
+.servicesCart .carte .iconService{
     font-size: 120px;
     color: var(--orange);
     margin-bottom: 40px;
+}
+
+.servicesCart .modal h4{
+    font-size: 35px;
+    margin-bottom: 4%;
+    font-weight: 700;
+    text-decoration: underline 4px solid var(--orange);
+}
+
+/* .servicesCart .modal .modal-dialog{
+    border: 1px solid blue;
+} */
+
+.servicesCart .modal .modal-header button{
+    border: none;
+    background: none;
+}
+
+.servicesCart .modal .modal-header button i{
+    font-size: 40px;
+    color: var(--orange);
+}
+
+.servicesCart .modal .cartimg img{
+    width: 100%;
+}
+
+/* .servicesCart .modal .cart {
+    border: 1px solid var(--orange);
+} */
+
+.servicesCart .modal .cart:hover{
+    position: relative;
+    bottom: 15px;
+    border-bottom: 2px solid var(--orange) !important;
+    transition: 1s ease !important;
+}
+
+.servicesCart .modal .cart p{
+    margin-top: 5%;
+}
+
+.servicesCart .modal .cart button{
+    background-color: white;
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+    margin-bottom: 4%;
+}
+
+.servicesCart .modal .cart button:hover{
+    background-color: var(--orange);
+    border: none;
+}
+
+.servicesCart .modal .cart button:hover a{
+    color: white !important;
+}
+
+.servicesCart .modal a{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--orange) !important;
 }
 /* section services */
 
@@ -215,118 +347,115 @@ footer{
 }
 /* footer */
 
-
-/* media queries */
-
-/* 700px */
 @media(max-width: 800px){
+
     .services{
         margin: 0 15px;
     }
-    /* section services */
+
     .servicesContent h3{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .servicesContent p{
         font-size: 18px;
         width: 100%;
     }
-    .servicesCart{
+
+    .servicesCart {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px;
+        grid-template-columns: 1fr !important;
+        gap: 50px;
+        row-gap: 50px;
     }
 
-    /* footer */
     footer{
-        padding-top: 4%;
-        padding: 20px 25px;
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footerContent{
+        display: block;
+    }
+
+    .footerContent .logoFooter {
+        background-color: white;
+        position: normal;
+        bottom: 0;
+        width: 100%;
+        display: none;
+        border: 2px solid rgb(47, 0, 128);
+    }
+
+    .footerContent .logoFooter img{
+        width: 100% !important;
+        border: 1px solid green;
     }
 
     .contentFooter{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
     }
-    .footerIpt{
+
+    .contentFooter .footerIpt {
         display: block !important;
+        border: none !important;
+    }
+
+    .contentFooter .footerIpt input,button{
+        width: 100% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .contentFooter .footerIpt input{
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    .contentFooter  .copyrightFooter{
+        display: block !important;
+        text-align: center;
+    }
+
+}
+
+/* 700px and 1100px */
+
+@media only screen and (min-width: 700px) and (max-width:930px){
+    .servicesCart {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 50px;
+        row-gap: 50px;
+    }
+
+    footer{
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footerContent{
+        display: block;
     }
 
     .footerContent .logoFooter {
         background-color: white;
         position: relative;
-        bottom: 0px;
-        /* display: none; */
-    }
-
-    .footerContent .logoFooter img{
-        width: 100% !important;
-    }
-
-    .contentFooter .footerIpt{
-        border: none;
+        bottom: 0;
+        width: 100%;
     }
 
     .contentFooter .footerIpt input{
         border: 1px solid white;
-        width: 100%;
-        padding: 2%;
         border-radius: 15px;
-        margin-bottom: 3%;
     }
 
-    .contentFooter .footerIpt button {
-        background-color: white;
+    .contentFooter{
+        margin-top: 20px;
         width: 100%;
-        border-radius: 15px;
-        font-size: 14px;
-        font-weight: bold;
-        color: var(--orange);
-        padding: 2%;
-    }
-
-    .contentFooter .footerIpt input::placeholder {
-        font-size: 16px;
-        color: white;
-    }
-
-    .contentFooter .copyrightFooter{
-        display: block !important;
-    }
-
-    .copyrightFooter .leftCopy,.rightCopy{
-        text-align: center;
-        margin-bottom: 15px !important;
-    }
-}
-
-
-/* 700px and 1100px */
-
-@media only screen and (min-width: 700px) and (max-width:930px){
-    footer{
-        padding-top: 20px;
-    }
-    /* section services */
-    .servicesCart{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    /* section footer */
-    .footerContent{
-        display: block !important;
-    }
-
-    .footerContent .logoFooter{
-        width: 100%;
-        bottom: 0;
-    }
-
-    .footerContent .contentFooter{
-        width: 100%;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding: 0 !important;
     }
 }

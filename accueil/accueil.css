@@ -63,9 +63,20 @@
 #exploit .card{
     background-color: var(--transparent) !important;
     height: 40vh;
+    border-top: 3px solid var(--orange)!important;
 }
 #exploit .card i{
     font-size: 30px;
+}
+
+/* section temoignages */
+.carousel-control-prev, .carousel-control-next{
+    background-color: var(--orange);
+    width: 6vh;
+    height: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 985px) {

@@ -25,6 +25,75 @@ nav a{
     color: black !important;
 }
 
+/* flipCard */
+.test{
+    border: 2px solid rgb(119, 0, 255);
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.front,.back {
+    width: 100%;
+    height: 100%;
+    border: 2px solid goldenrod;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s linear;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+
+/* .front-content {
+    color: white;
+    text-align: center;
+}
+
+.front-content p {
+    margin-bottom: 20px;
+} */
+
+.back {
+    background-color: var(--orange);
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content p {
+    width: 100% !important;
+    border: 1px solid rgb(0, 1, 5);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.test:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.test:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+/* flipCard */
+
 
 /* main */
 
@@ -85,22 +154,26 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8% 4%;
+    padding: 40px 0;
 }
 
-.servicesCart .carte .cart-content{
+.servicesCart .carte .front-content{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.servicesCart .carte .cart-content .cartText{
+.servicesCart .carte .front-content span{
+    margin: 0;
+}
+
+.servicesCart .carte .cartText{
     font-size: 20px;
     color: var(--orange);
     font-weight: 600;
 }
 
-.servicesCart .carte .cart-content .iconService{
+.servicesCart .carte .iconService{
     font-size: 120px;
     color: var(--orange);
     margin-bottom: 40px;

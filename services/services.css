@@ -144,13 +144,13 @@ nav a{
 
 .servicesCart{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 50px;
     row-gap: 50px;
 }
 
 .servicesCart .carte{
-    border: 1px solid var(--orange);
+    /* border: 1px solid var(--orange); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,9 +176,66 @@ nav a{
     margin-bottom: 40px;
 }
 
+.servicesCart .modal h4{
+    font-size: 35px;
+    margin-bottom: 4%;
+    font-weight: 700;
+    text-decoration: underline 4px solid var(--orange);
+}
 
-.servicesCart .modal .modal-dialog{
+/* .servicesCart .modal .modal-dialog{
     border: 1px solid blue;
+} */
+
+.servicesCart .modal .modal-header button{
+    border: none;
+    background: none;
+}
+
+.servicesCart .modal .modal-header button i{
+    font-size: 40px;
+    color: var(--orange);
+}
+
+.servicesCart .modal .cartimg img{
+    width: 100%;
+}
+
+/* .servicesCart .modal .cart {
+    border: 1px solid var(--orange);
+} */
+
+.servicesCart .modal .cart:hover{
+    position: relative;
+    bottom: 15px;
+    border-bottom: 2px solid var(--orange) !important;
+    transition: 1s ease !important;
+}
+
+.servicesCart .modal .cart p{
+    margin-top: 5%;
+}
+
+.servicesCart .modal .cart button{
+    background-color: white;
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+    margin-bottom: 4%;
+}
+
+.servicesCart .modal .cart button:hover{
+    background-color: var(--orange);
+    border: none;
+}
+
+.servicesCart .modal .cart button:hover a{
+    color: white !important;
+}
+
+.servicesCart .modal a{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--orange) !important;
 }
 /* section services */
 
@@ -289,119 +346,3 @@ footer{
     transition: 2s ease;
 }
 /* footer */
-
-
-/* media queries */
-
-/* 700px */
-@media(max-width: 800px){
-    .services{
-        margin: 0 15px;
-    }
-    /* section services */
-    .servicesContent h3{
-        font-size: 20px;
-    }
-
-    .servicesContent p{
-        font-size: 18px;
-        width: 100%;
-    }
-    .servicesCart{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    /* footer */
-    footer{
-        padding-top: 4%;
-        padding: 20px 25px;
-    }
-
-    .contentFooter{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    .footerIpt{
-        display: block !important;
-    }
-
-    .footerContent .logoFooter {
-        background-color: white;
-        position: relative;
-        bottom: 0px;
-        /* display: none; */
-    }
-
-    .footerContent .logoFooter img{
-        width: 100% !important;
-    }
-
-    .contentFooter .footerIpt{
-        border: none;
-    }
-
-    .contentFooter .footerIpt input{
-        border: 1px solid white;
-        width: 100%;
-        padding: 2%;
-        border-radius: 15px;
-        margin-bottom: 3%;
-    }
-
-    .contentFooter .footerIpt button {
-        background-color: white;
-        width: 100%;
-        border-radius: 15px;
-        font-size: 14px;
-        font-weight: bold;
-        color: var(--orange);
-        padding: 2%;
-    }
-
-    .contentFooter .footerIpt input::placeholder {
-        font-size: 16px;
-        color: white;
-    }
-
-    .contentFooter .copyrightFooter{
-        display: block !important;
-    }
-
-    .copyrightFooter .leftCopy,.rightCopy{
-        text-align: center;
-        margin-bottom: 15px !important;
-    }
-}
-
-
-/* 700px and 1100px */
-
-@media only screen and (min-width: 700px) and (max-width:930px){
-    footer{
-        padding-top: 20px;
-    }
-    /* section services */
-    .servicesCart{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    /* section footer */
-    .footerContent{
-        display: block !important;
-    }
-
-    .footerContent .logoFooter{
-        width: 100%;
-        bottom: 0;
-    }
-
-    .footerContent .contentFooter{
-        width: 100%;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}

@@ -51,9 +51,6 @@ a {
 
 
 /* main */
-main .contentContact{
-    border: 1px solid red;
-}
 
 .contentContact .leftCont{
     display: flex;
@@ -233,8 +230,19 @@ footer {
 
 /* 700px */
 @media(max-width: 800px) {
+    /* main */
+    .leftCont{
+        margin-bottom: 40px;
+    }
 
-    /* footer */
+    .formulaire .put{
+        display: block !important;
+    }
+
+    .formulaire .put .ipt{
+        width: 100% !important;
+    }
+    /* main */
     footer {
         padding-top: 4%;
         padding: 20px 25px;
@@ -247,6 +255,7 @@ footer {
 
     .footerIpt {
         display: block !important;
+        border: none !important;
     }
 
     .footerContent .logoFooter {
@@ -302,8 +311,19 @@ footer {
 /* 700px and 1100px */
 
 @media only screen and (min-width: 700px) and (max-width:930px) {
+    main .contentContact .content{
+        display: block !important;
+    }
+
+    .content .leftCont,.formulaire{
+        width: 100%;
+    }
     footer {
         padding-top: 20px;
+    }
+
+    footer .footerIpt{
+        border: none !important;
     }
 
     /* section footer */

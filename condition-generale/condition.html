@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="condition.css">
     <link rel="stylesheet" href="../public/style/header.css">
+    <link rel="stylesheet" href="../public/style/footer.css">
+
+
+    <!-- <link rel="stylesheet" href="../services/services.css"> -->
+
     <link rel="stylesheet" href="../public/style/style.css">
-    <link rel="stylesheet" href="../services/services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,65 +28,67 @@
                     <a href="#" class="text-decoration-none text-black bg-white p-2 mb-3 d-block shadow">Daray Techologie
                         &nbsp;&nbsp;<iclass="fa-brands fa-youtube orange"></i></a>
                 </div>
-<header class="">
-    <nav class="nav-fixed navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container-fluid d-flex justify-content-between bg-white">
-            <div>
-                <a class="navbar-brand" href="../accueil/accueil.html"><img src="../../public/images/logo.png" id="logo"
-                        alt=""></a>
-             </div>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<header>
+    <nav class="navbar navbar-expand-lg bg-white shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo"
+                    alt=""></a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item text-black">
-                             <a class="nav-link text-black active fw-bold" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link text-black active fw-bold" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item ">
-                                 <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
-                                </li>
-                            <li class="nav-item">
-                                    <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
-                             </li>
-                            <li class="nav-item">
-                                 <a href="../formations/formation.html" class="nav-link text-black fw-bold">Formations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
-                            </li>
-                            <li class="nav-item">
-                                  <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
-                            </li>
-                         </ul>
-                    <div class="d-none" id="us-contact">
-                        <button class="btn bgOrange text-white p-2">Nous contacter</button>
+                            <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../formations/formation.html" class="nav-link text-black fw-bold">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
+                        </li>
+                    </ul>
+                    <div id="contact-us">
+                        <a href="" class="text-decoration-none "><button class="btn bgOrange text-white p-2">Nous
+                                contacter</button></a>
                     </div>
                 </div>
             </div>
-            <div id="contact-us">
-                 <button class="btn bgOrange text-white p-2">Nous contacter</button>
-             </div>
-         </div>
-     </nav>
-        <section id="banner">
-                   <div class="pt-5 banner-texte ms-6">
-                        <h2 class="Baniers text-center mt-4">
-                                Condition d’utilisation
-                        </h2>
-                        <p class="AcConditio text-center mt-4"><i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                            Accueil / <span style="color: brown;">Conditions d’utilisation</span> 
-                        </p>
-                <div class="mt-4">
-                            <a href="../contact/contact.html" type="button" id="btn-contact"
-                         class="btn text-white border border-2 radiusButton ms-5">Contacter nous maintenant !</a>
-                </div>
-                </div>
-            </section>
-        </header>
+        </div>
+    </nav>
+    <section id="banner">
+        <div class="pt-5 banner-texte">
+            <h2 class="text-center mt-6">
+                Condition General
+            </h2>
+            <!-- <p class="w-50">
+                Transformez votre vision digitale en réalité avec notre expertise nous serons votre partenaire vers le
+                succès en ligne
+            </p> -->
+            <div class="mt-4">
+                <a href="../contact/contact.html" type="button" id="btn-contact"
+                    class="btn text-white border border-2 radiusButton">Contacter nous maintenant !</a>
+            </div>
+        </div>
+    </section>
+</header>
             <!-- main -->
             <main>
             <div class=" mx-5 mt-5">

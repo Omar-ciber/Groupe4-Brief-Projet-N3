@@ -17,10 +17,6 @@ a {
     color: white;
 }
 
-nav {
-    border-bottom: 5px solid var(--orange);
-}
-
 nav a {
     color: black !important;
 }
@@ -195,6 +191,17 @@ footer {
 
 /* 700px */
 @media(max-width: 800px) {
+    .banniere{
+        margin-top: 30%;
+    }
+
+    .banniereContent h1{
+        font-size: 20px;
+    }
+
+    .sectionConfidentielle {
+        margin: 0 2%;
+    }
 
     /* footer */
     footer {
@@ -264,6 +271,15 @@ footer {
 /* 700px and 1100px */
 
 @media only screen and (min-width: 700px) and (max-width:930px) {
+    .banniere{
+        margin-top: 25%;
+    }
+    .banniereContent h1{
+        font-size: 25px;
+    }
+    .sectionConfidentielle {
+        margin: 0 3%;
+    }
     footer {
         padding-top: 20px;
     }

@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- service css -->
     <link rel="stylesheet" href="services.css">
     <!-- style css -->
+    <link rel="stylesheet" href="../public/style/header.css">
     <link rel="stylesheet" href="../public/style/style.css">
     <link rel="stylesheet" href="../public/style/footer.css">
-    <link rel="stylesheet" href="../public/style/header.css">
     <!-- <link rel="stylesheet" href="../public/style/header.css"> -->
     <title>Services</title>
 </head>
@@ -21,20 +20,22 @@
 
     <!-- header -->
     <header>
-        <nav class="nav-fixed navbar navbar-expand-lg bg-white fixed-top">
-            <div class="container-fluid d-flex justify-content-between bg-white">
-                <div>
-                    <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo" alt=""></a>
-                </div>
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <nav class="navbar navbar-expand-lg shadow fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo"
+                        alt=""></a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item text-black">
                                 <a class="nav-link text-black fw-bold" aria-current="page" href="../accueil/accueil.html">Accueil</a>
                             </li>
@@ -54,13 +55,11 @@
                                 <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
                             </li>
                         </ul>
-                        <div class="d-none" id="us-contact">
-                            <button class="btn bgOrange text-white p-2"><a href="../contact/contact.html">Nous contacter</a></button>
+                        <div id="contact-us">
+                            <a href="" class="text-decoration-none "><button class="btn bgOrange text-white p-2">Nous
+                                    contacter</button></a>
                         </div>
                     </div>
-                </div>
-                <div id="contact-us">
-                    <button class="btn bgOrange text-white p-2"><a href="../contact/contact.html">Nous contacter</a></button>
                 </div>
             </div>
         </nav>
@@ -81,17 +80,18 @@
             </div>
         </section>
         <!-- Bannière -->
-
+    
         <!-- services -->
         <section class="mx-md-5 services mb-5">
             <div class="servicesContent">
                 <!-- titre -->
                 <h3 class="text-center pb-4">Les services que nous offrons</h3>
-                <p class="text-center m-auto pb-5">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit OmnisId Atque Dignissimos Repellat Quae Ullam.</p>
-
+                <p class="text-center m-auto pb-5">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit OmnisId Atque
+                    Dignissimos Repellat Quae Ullam.</p>
+    
                 <!--cartes services -->
                 <div class="servicesCart">
-
+    
                     <!-- cart 1 -->
                     <div class="test carte">
                         <div class="front shadow">
@@ -103,8 +103,9 @@
                         <div class="back">
                             <div class="back-content">
                                 <p class="">
-                                    Créer facilement un site web de qualité professionnelle. 
-                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou exprimez votre créativité en ligne. 
+                                    Créer facilement un site web de qualité professionnelle.
+                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou
+                                    exprimez votre créativité en ligne.
                                 </p>
                                 <button class="btn" data-bs-toggle="modal" data-bs-target="#modal1">Voir plus</button>
                             </div>
@@ -114,7 +115,8 @@
                         <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable shadow">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
+                                    <button type="button" class="close" data-bs-dismiss="modal"><i
+                                            class="fa-solid fa-circle-xmark"></i></button>
                                 </div>
                                 <div class="modal-body">
                                     <h4 class="modal-title text-center">Création de site web</h4>
@@ -126,10 +128,12 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
-                                                        <button class="btn w-75"><a target="_blank" href="https://www.google.com">Consulter</a></button>
+                                                        <button class="btn w-75"><a target="_blank"
+                                                                href="https://www.google.com">Consulter</a></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -141,55 +145,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                    </p>
-                                                    <div class="d-flex justify-content-center align-content-center">
-                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 cl">
-                                            <div class="cart shadow">
-                                                <div class="cartimg">
-                                                    <img src="./images/tmp1.jpg" alt="">
-                                                </div>
-                                                <div class="cartText">
-                                                    <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                    </p>
-                                                    <div class="d-flex justify-content-center align-content-center">
-                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mx-md-5 mb-4">
-                                        <div class="col-12 col-md-4 cl">
-                                            <div class="cart shadow">
-                                                <div class="cartimg">
-                                                    <img src="./images/tmp1.jpg" alt="">
-                                                </div>
-                                                <div class="cartText">
-                                                    <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                    </p>
-                                                    <div class="d-flex justify-content-center align-content-center">
-                                                        <button class="btn w-75"><a target="_blank" href="https://www.google.com">Consulter</a></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 cl">
-                                            <div class="cart shadow">
-                                                <div class="cartimg">
-                                                    <img src="./images/tmp1.jpg" alt="">
-                                                </div>
-                                                <div class="cartText">
-                                                    <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -204,7 +161,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -213,7 +171,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+    
                                     <div class="row mx-md-5 mb-4">
                                         <div class="col-12 col-md-4 cl">
                                             <div class="cart shadow">
@@ -222,10 +180,12 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
-                                                        <button class="btn w-75"><a target="_blank" href="https://www.google.com">Consulter</a></button>
+                                                        <button class="btn w-75"><a target="_blank"
+                                                                href="https://www.google.com">Consulter</a></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -237,7 +197,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -252,7 +213,60 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row mx-md-5 mb-4">
+                                        <div class="col-12 col-md-4 cl">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp1.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a target="_blank"
+                                                                href="https://www.google.com">Consulter</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 cl">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp1.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 cl">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp1.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -265,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- cart 2 -->
                     <div class="test carte">
                         <div class="front shadow">
@@ -278,7 +292,8 @@
                             <div class="back-content">
                                 <p class="">
                                     Créer facilement un site web de qualité professionnelle.
-                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou exprimez votre
+                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou
+                                    exprimez votre
                                     créativité en ligne.
                                 </p>
                                 <button class="btn" data-bs-toggle="modal" data-bs-target="#modal2">Voir plus</button>
@@ -301,7 +316,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a target="_blank"
@@ -317,7 +333,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -332,7 +349,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -341,7 +359,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -350,7 +368,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -365,7 +384,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -380,7 +400,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -389,7 +410,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -398,7 +419,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -413,7 +435,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -428,7 +451,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -441,7 +465,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- cart 3 -->
                     <div class="test carte">
                         <div class="front shadow">
@@ -454,7 +478,8 @@
                             <div class="back-content">
                                 <p class="">
                                     Créer facilement un site web de qualité professionnelle.
-                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou exprimez votre
+                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou
+                                    exprimez votre
                                     créativité en ligne.
                                 </p>
                                 <button class="btn" data-bs-toggle="modal" data-bs-target="#modal3">Voir plus</button>
@@ -477,7 +502,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a target="_blank"
@@ -493,7 +519,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -508,7 +535,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -517,7 +545,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -526,7 +554,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -541,7 +570,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -556,7 +586,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -565,7 +596,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -574,7 +605,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -589,7 +621,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -604,7 +637,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -617,7 +651,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- cart 4 -->
                     <div class="test carte">
                         <div class="front shadow">
@@ -630,7 +664,8 @@
                             <div class="back-content">
                                 <p class="">
                                     Créer facilement un site web de qualité professionnelle.
-                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou exprimez votre
+                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou
+                                    exprimez votre
                                     créativité en ligne.
                                 </p>
                                 <button class="btn" data-bs-toggle="modal" data-bs-target="#modal4">Voir plus</button>
@@ -653,7 +688,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a target="_blank"
@@ -669,7 +705,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -684,7 +721,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -693,7 +731,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -702,7 +740,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -717,7 +756,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -732,7 +772,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -741,7 +782,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -750,7 +791,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -765,7 +807,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -780,7 +823,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -793,7 +837,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- cart 5 -->
                     <div class="test carte">
                         <div class="front shadow">
@@ -806,7 +850,8 @@
                             <div class="back-content">
                                 <p class="">
                                     Créer facilement un site web de qualité professionnelle.
-                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou exprimez votre
+                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou
+                                    exprimez votre
                                     créativité en ligne.
                                 </p>
                                 <button class="btn" data-bs-toggle="modal" data-bs-target="#modal5">Voir plus</button>
@@ -814,152 +859,162 @@
                         </div>
                     </div>
                     <div class="modal" id="modal5">
-                    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable shadow">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <h4 class="modal-title text-center">Création de site web</h4>
-                                <div class="row mx-5 mb-4">
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp1.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a target="_blank"
-                                                            href="https://www.google.com">Consulter</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp1.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp1.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable shadow">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
                                 </div>
-                
-                                <div class="row mx-5 mb-4">
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp2.jpg" alt="">
+                                <div class="modal-body">
+                                    <h4 class="modal-title text-center">Création de site web</h4>
+                                    <div class="row mx-5 mb-4">
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp1.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a target="_blank"
+                                                                href="https://www.google.com">Consulter</a></button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp1.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp1.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp2.jpg" alt="">
+    
+                                    <div class="row mx-5 mb-4">
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp2.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp2.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp2.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp2.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
+    
+                                    <div class="row mx-5 mb-4">
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp3.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                
-                                <div class="row mx-5 mb-4">
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp3.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp3.jpg" alt="">
+                                                </div>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp3.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
+                                        <div class="col-12 col-md-4">
+                                            <div class="cart shadow">
+                                                <div class="cartimg">
+                                                    <img src="./images/tmp3.jpg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="cart shadow">
-                                            <div class="cartimg">
-                                                <img src="./images/tmp3.jpg" alt="">
-                                            </div>
-                                            <div class="cartText">
-                                                <p class="w-100 text-center">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
-                                                </p>
-                                                <div class="d-flex justify-content-center align-content-center">
-                                                    <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                <div class="cartText">
+                                                    <p class="w-100 text-center">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-content-center">
+                                                        <button class="btn w-75"><a href="#">Consulter</a></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -968,8 +1023,7 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-
+    
                     <!-- cart 6 -->
                     <div class="test carte">
                         <div class="front shadow">
@@ -982,7 +1036,8 @@
                             <div class="back-content">
                                 <p class="">
                                     Créer facilement un site web de qualité professionnelle.
-                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou exprimez votre
+                                    Développez votre activité, présentez vos travaux, créez votre boutique en ligne ou
+                                    exprimez votre
                                     créativité en ligne.
                                 </p>
                                 <button class="btn" data-bs-toggle="modal" data-bs-target="#modal6">Voir plus</button>
@@ -1005,7 +1060,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a target="_blank"
@@ -1021,7 +1077,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1036,7 +1093,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1045,7 +1103,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -1054,7 +1112,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1069,7 +1128,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1084,7 +1144,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1093,7 +1154,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    
+    
                                     <div class="row mx-5 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="cart shadow">
@@ -1102,7 +1163,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1117,7 +1179,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1132,7 +1195,8 @@
                                                 </div>
                                                 <div class="cartText">
                                                     <p class="w-100 text-center">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illo.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                                                        illo.
                                                     </p>
                                                     <div class="d-flex justify-content-center align-content-center">
                                                         <button class="btn w-75"><a href="#">Consulter</a></button>
@@ -1145,12 +1209,12 @@
                             </div>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
         </section>
     </main>
-
+    
     <!-- footer -->
     <footer>
         <div class="footerContent mx-md-5 row">
@@ -1196,12 +1260,11 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
     <script src="../public/script/script.js"></script>
     <script src="../public/script/FontAwesome.js"></script>
     <!-- sweetAlert -->

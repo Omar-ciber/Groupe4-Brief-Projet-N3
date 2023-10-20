@@ -197,10 +197,10 @@ function loadCommentsFromLocalStorage(articleId) {
 
 document.getElementById('send-button').addEventListener('click', addComment);
 
-$('#comment-modal').on('hidden.bs.modal', function () {
-    // Supprimer la classe du fond noir après la fermeture du deuxième modal
-    $('.modal-backdrop').remove();
-  });
+// $('#comment-modal').on('hidden.bs.modal', function () {
+//     // Supprimer la classe du fond noir après la fermeture du deuxième modal
+//     $('.modal-backdrop').remove();
+//   });
 
 window.addEventListener('load', generateArticleCards);
 

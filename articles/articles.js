@@ -126,11 +126,12 @@ function addComment() {
     var commentText = commentInput.value;
 
     var commentCard = document.createElement('div');
-    commentCard.className = 'card mb-3';
+    commentCard.className = 'card mb-3 w-50 m-auto border-0';
+    commentCard.id = 'mycard';
     commentCard.innerHTML = `
-        <div class="row g-0">
+        <div class="row g-0" id="comment">
             <div class="col-md-4">
-                <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-25" alt="...">
+                <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-50" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -175,16 +176,17 @@ function loadCommentsFromLocalStorage(articleId) {
     comments.forEach(function(commentText) {
         console.log(commentText);
         var commentCard = document.createElement('div');
-        commentCard.className = 'card mb-3 h-25';
+        commentCard.className = 'card mb-3 w-75 m-auto border-0';
+        commentCard.id = 'mycard';
         commentCard.innerHTML = `
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-25" alt="...">
+            <div class="row g-0" id="comment">
+                <div class="col-md-6">
+                    <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-50" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="card-body">
-                        <h5 class="card-title">Prenom Nom</h5>
-                        <p class="card-text">${commentText}</p>
+                        <h5 class="card-title p-0 m-0">Prenom Nom</h5>
+                        <p class="card-text m-0 p-0">${commentText}</p>
                         <p class="card-text"><small class="text-body-secondary">Il y'a 3mn</small></p>
                     </div>
                 </div>

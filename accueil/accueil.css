@@ -11,8 +11,6 @@
     width: 100%;
     background-position: center;
     color: white;
-    margin-top: 100px;
-
 }
 #banner .banner-texte{
     margin-left: 80px !important;
@@ -84,19 +82,33 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 985px) {
-
     #services #row-cols-2{
         display: grid !important;
         grid-template-columns: auto auto !important;
         justify-content: center;
+        margin: 0 auto;
         width: 100%;
     }
     #services #row-cols-2 .card{
         width: 350px !important;
+        height: 20vh;
 
     }
     #image-why{
         height: 50vh;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    #banner{
+        height: 50vh;
+    }
+
+    #services .card{
+        height: 20vh !important;
+
     }
     
 }

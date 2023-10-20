@@ -3,6 +3,55 @@
     padding: 0;
 }
 
+/* section bannière */
+.banniere {
+  background-image: url(../../public/images/banniere-technologie-orange.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+  margin-top: 110px;
+}
+
+.banniereContent h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.banniereContent p {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.banniere a {
+  text-decoration: none;
+}
+
+.banniereContent .linkAccueil a {
+  color: white !important;
+}
+
+.banniereContent .linkPage a {
+  color: var(--orange);
+}
+
+/* section bannière */
+
+ul{
+  padding: 0 !important;
+}
+
+li{
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+}
+
 #banner{
     background: linear-gradient(0deg, #0000008f, #0000008f), url("image_forma2/3.jpg");
     height: 80vh;
@@ -31,9 +80,9 @@
     /* width: 70%; */
     /* border-bottom-left-radius: 70; */
 }
-.card-text-forma2{
+/* .card-text-forma2{
    
-}
+} */
 
 
 

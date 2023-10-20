@@ -392,7 +392,7 @@ footer{
     .back-content button {
         width: 50% !important;
         font-size: 18px;
-        background-color: white;
+        background-color: white !important;
         color: var(--orange) !important;
         font-weight: bold;
     }

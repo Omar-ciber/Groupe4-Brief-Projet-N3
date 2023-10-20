@@ -44,274 +44,289 @@
   </div>
   </div>
     <header class="">
-      <nav class="nav-fixed navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container-fluid d-flex justify-content-between bg-white">
-            <div>
-              <a class="navbar-brand" href="../../accueil/accueil.html"><img src="../../public/images/logo.png" id="logo" alt=""></a>
-            </div>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-  
-                <!-- <a class="nav-link text-black active fw-bold" aria-current="page" href="#">Accueil</a> -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item text-black">
-                      <a href="../../accueil/accueil.html" class="nav-link text-black fw-bold">Accueil</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a href="../../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../../services/services.html" class="nav-link text-black fw-bold">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-black active fw-bold" aria-current="page" href="#">Formations</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
-                    </li>
-                  </ul>
-                  <div class="d-none" id="us-contact">
-                      <button class="btn bgOrange text-white p-2">Nous contacter</button>
-                  </div>
+        <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="../accueil/accueil.html"><img src="../../../public/images/logo.png" id="logo" alt=""></a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item text-black">
+                    <a class="nav-link text-black fw-bold" aria-current="page" href="../../accueil/accueil.html">Accueil</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a href="../../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../services/services.html" class="nav-link active text-black fw-bold">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../formations/accueilforma/accueilforma.html" class="nav-link active text-black fw-bold">Formations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
+                  </li>
+                </ul>
+                <div id="contact-us">
+                  <a href="../../contact/contact.html" class="text-decoration-none "><button class="btn  text-white p-2" style="background-color: orangered;">Nous
+                      contacter</button></a>
                 </div>
+              </div>
             </div>
-            <div id="contact-us">
-                <button class="btn bgOrange text-white p-2">Nous contacter</button>
-            </div>
-        </div>
-      </nav>
-      <section id="banner">
-        <div class="p-5 m-5 banner-texte d-flex justify-content-center">
-            <h2 class="mb-5 mt-5 ms-5 fs-1 fw-bold">
-                Developpement Web Front-End
-            </h2>
-          
-        </div>
-      </section>
+          </div>
+        </nav>
     </header>
 
 
 
 
-    <main class="container">
+    <main class="">
 
-        <div class="input-group mt-5">
-            <input type="text" class="form-control fw-bold text-black" placeholder="Rechercher...">
-            <div class="input-group-append">
-              <button class="btn bg-black" type="button">
-                <i class="fa fa-search" style="color: white;"></i>
-              </button>
-            </div>
+      <!-- Bannière -->
+      <section class="banniere">
+        <div class="banniereContent text-center mt-5 mb-5">
+          <h1>Formations</h1>
+          <p>
+            <span class="linkAccueil"><a href="../accueil/accueil.html">Accueil</a></span>
+            /
+            <span class="linkPage"><a href="./forma2.html">Formations</a></span>
+          </p>
         </div>
-                    <!-- <div class="row section-width m-auto video">
-                <div class="col">
-                    <div class="mb-4">
-                        <iframe></iframe>
-                    </div>
-                </div>
+      </section>
+      <!-- Bannière -->
 
-            </div> -->
-
-
+      <section class="container">
+        <div class="input-group mt-5">
+          <input type="text" class="form-control fw-bold text-black" placeholder="Rechercher...">
+          <div class="input-group-append">
+            <button class="btn bg-black" type="button">
+              <i class="fa fa-search" style="color: white;"></i>
+            </button>
+          </div>
+        </div>
+        <!-- <div class="row section-width m-auto video">
+                        <div class="col">
+                            <div class="mb-4">
+                                <iframe></iframe>
+                            </div>
+                        </div>
+        
+                    </div> -->
+        
+        
         <!-- <div class="container mt-4">
-    
-            <div class="row mb-2">
+            
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                          <div class="card-forma2 row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                            <div class="press col-auto d-none d-lg-block">
+                               <img src="image_forma2/press-html.png" alt="">
+                            </div>
+                            <div class="card-text-forma2 col p-4 d-flex flex-column position-static">
+                              <h3 class="mb-3">Cours sur HTML</h3>
+                              <p class="mb-auto">Le HyperText Markup Language, généralement abrégé HTML </p>
+                              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5" style="color: #E94D1A;">
+                                En savoir plus
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-6">
+                          <div class="card-forma2 row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            </div>
+                            <div class="col p-4 d-flex flex-column position-static">
+                              <h3 class="mb-3">Cours sur HTML</h3>
+                              <p class="mb-auto">Le HyperText Markup Language, généralement abrégé HTML </p>
+                              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5" style="color: #E94D1A;">
+                                En savoir plus
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                     
+                </div> -->
+        
+        <div class="container mt-5">
+          <div class="line d-flex justify-content-evenly">
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
+                </div>
                 <div class="col-md-6">
-                  <div class="card-forma2 row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                    <div class="press col-auto d-none d-lg-block">
-                       <img src="image_forma2/press-html.png" alt="">
-                    </div>
-                    <div class="card-text-forma2 col p-4 d-flex flex-column position-static">
-                      <h3 class="mb-3">Cours sur HTML</h3>
-                      <p class="mb-auto">Le HyperText Markup Language, généralement abrégé HTML </p>
-                      <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5" style="color: #E94D1A;">
-                        En savoir plus
-                      </a>
-                    </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
                   </div>
                 </div>
-
+              </div>
+            </div>
+        
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
+                </div>
                 <div class="col-md-6">
-                  <div class="card-forma2 row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    </div>
-                    <div class="col p-4 d-flex flex-column position-static">
-                      <h3 class="mb-3">Cours sur HTML</h3>
-                      <p class="mb-auto">Le HyperText Markup Language, généralement abrégé HTML </p>
-                      <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5" style="color: #E94D1A;">
-                        En savoir plus
-                      </a>
-                    </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
                   </div>
                 </div>
+              </div>
             </div>
-             
-        </div> -->
-
-      <div class="container mt-5">
-            <div class="line d-flex justify-content-evenly">
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+        
+          <div class="line d-flex justify-content-evenly">
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
                 </div>
-
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div class="line d-flex justify-content-evenly">
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+        
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
                 </div>
-
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div class="line d-flex justify-content-evenly">
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+        
+          <div class="line d-flex justify-content-evenly">
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
                 </div>
-
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div class="line d-flex justify-content-evenly">
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+        
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
                 </div>
-
-                <div class="card-forma2 mb-3  " style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="press col-md-6">
-                        <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
-                          <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
-                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3" style="color: #E94D1A;">
-                            En savoir plus
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-
-      </div>
-
+          </div>
+        
+          <div class="line d-flex justify-content-evenly">
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card-forma2 mb-3  " style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="press col-md-6">
+                  <img src="image_forma2/press-html.png" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold">Cours sur HTML</h5>
+                    <p class="card-text fs-5">Le HyperText Markup Language, généralement abrégé HTML </p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link fw-bold fs-5 mt-3"
+                      style="color: #E94D1A;">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        
         <nav data-pagination class="mt-5">
-            <a href=# disabled><i class="bi bi-arrow-left-circle"></i></a>
-            <ul>
-              <li class=current><a href=#1>1</a>
-              <li><a href=#2>2</a>
-              <li><a href=#3>3</a>
-              <li><a href=#10>…</a>
-            </ul>
-            <a href=#2><i class="bi bi-arrow-right-circle"></i></a>
-          </nav>
+          <a href=# disabled><i class="bi bi-arrow-left-circle"></i></a>
+          <ul>
+            <li class=current><a href=#1>1</a>
+            <li><a href=#2>2</a>
+            <li><a href=#3>3</a>
+            <li><a href=#10>…</a>
+          </ul>
+          <a href=#2><i class="bi bi-arrow-right-circle"></i></a>
+        </nav>
+      </section>
 
     </main>
 

@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+#contact{
+    background-color: var(--orange);
+}
 #banner{
     background: linear-gradient(0deg, #0000008f, #0000008f), url("../../a-propos/image_a-propos/bcg_propos.png");
     height: 80vh;

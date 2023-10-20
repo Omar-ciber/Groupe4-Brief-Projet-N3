@@ -1,88 +1,185 @@
-document.getElementById('first').addEventListener('click', function() {
-    changeImage('https://img.freepik.com/photos-gratuite/coup-moyen-homme-portant-lunettes-vr_23-2149126949.jpg?w=996&t=st=1697690002~exp=1697690602~hmac=afb18cfdf25e05a50c8b21f461ad5d9384683795cf814c28063876d3587c779e');
-  });
+var articlesData = [
+    {
+        id: 1,
+        title: "Développeur Web Front-End",
+        image: "https://img.freepik.com/photos-premium/abstract-book-and-open-laptop-generative-ai_786587-12901.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais",
+        description: "Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    },
+    {
+        id: 2,
+        title: "Développeur Web Front-End",
+        image: "https://img.freepik.com/photos-gratuite/ordinateur-portable-ecouteurs-pres-blocs-notes-crayons_23-2147929697.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais",
+        description: "Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    },
+    {
+        id: 3,
+        title: "Développeur Web Front-End",
+        image: "https://img.freepik.com/photos-gratuite/codeur_1098-18084.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=sph",
+        description: "Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    },
+    {
+        id:4,
+        title: "Développeur Web Front-End",
+        image: "https://img.freepik.com/photos-gratuite/disposition-ordinateurs-portables-livres_23-2149765762.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais",
+        description: "Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    },
+    {
+        id:5,
+        title: "Développeur Web Front-End",
+        image: "https://img.freepik.com/photos-gratuite/espace-travail-bois-nature-morte-ordinateur-portable_23-2148186945.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais",
+        description: "Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    },
+    {
+        id:6,
+        title: "Développeur Web Front-End",
+        image: "https://img.freepik.com/photos-gratuite/nature-morte-livres-contre-technologie_23-2150062975.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais",
+        description: "Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    },
+];
 
-  document.getElementById('third').addEventListener('click', function() {
-    changeImage('https://img.freepik.com/photos-gratuite/vue-poste-travail-informatique-au-look-retro_23-2150805100.jpg?w=1380&t=st=1697705515~exp=1697706115~hmac=037265cfc9facad3da3b9e8e122d1bc0f1b6753097e34fa0e97b311c58483d1b');
-  });
+function generateArticleCards() {
+    var articleRow = document.getElementById('articleRow');
 
-  document.getElementById('third').addEventListener('click', function() {
-    changeImage('https://img.freepik.com/photos-premium/affichage-graphique-point-doigt-humain-rendu-3d_493806-7331.jpg?w=900');
-  });
+    articlesData.forEach(function(article) {
+        var articleCard = document.createElement('div');
+        articleCard.className = 'col';
+        articleCard.innerHTML = `
+            <div class="card border-0 shadow">
+                <img src="${article.image}" class="img-fluid" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">${article.title}</h5>
+                    <p class="my-3">${article.description}</p>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn bg-white border border-2 border-black radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="openArticleModal(${article.id})">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        articleRow.appendChild(articleCard);
+    });
+}
 
-// fermer le premier modal
-document.getElementById('comment-btn').addEventListener('click', function() {
-    // Fermer le premier modal
-    $('#staticBackdrop').modal('hide');
-    console.log("Fermer")
-  });
+function openArticleModal(articleId) {
+    var modalTitle = document.getElementById('staticBackdropLabel');
+    var modalBodyArticle = document.getElementById('modalBodyArticle');
 
-  $('#comment-modal').on('hidden.bs.modal', function () {
-    // Supprimer la classe du fond noir après la fermeture du deuxième modal
-    $('.modal-backdrop').remove();
-  });
+    var article = articlesData.find(item => item.id === articleId);
 
-  document.getElementById('send-button').addEventListener('click', addComment);
+    modalTitle.textContent = article.title;
+    modalBodyArticle.innerHTML = `
+        <div class="card border-0 shadow">
+            <img src="${article.image}" class="img-fluid" alt="">
+            <div class="card-body">
+                <p class="my-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora
+                      reiciendis libero voluptate!.Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                  </p>
+                  <p class="my-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!. Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora
+                      reiciendis libero voluptate!.Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                  </p>
+                <div class="d-flex justify-content-end mt-3">
+                    <button class="btn border border-2 radiusButton" data-bs-toggle="modal" data-bs-target="#comment-modal" id="comment-btn" onclick="openCommentModal(${article.id})">Commenter</button>
+                </div>
+            </div>
+        </div>
+    `;
 
-function changeImage(newSrc) {
-    if (newSrc) {
-      document.getElementById('modalImage').src = newSrc;
-    }
-  }
+    loadCommentsFromLocalStorage(articleId);
 
-  function addComment() {
+
+    // Ouvrir le modal
+    $('#staticBackdrop').modal('show');
+
+}
+
+function openCommentModal(articleId) {
+    var commentModal = document.getElementById('comment-modal');
+    var commentList = document.getElementById('commentList');
+    var articleNameSpan = document.getElementById('article-name');
+
+    var article = articlesData.find(item => item.id === articleId);
+
+    articleNameSpan.textContent = article.title;
+
+    commentModal.setAttribute('data-article-id', articleId); //pr stocker temporairement l'id 
+
+    loadCommentsFromLocalStorage(articleId);
+
+    var article = articlesData.find(item => item.id === articleId);
+        articleNameSpan.textContent = article.title;
+
+    $('#comment-modal').modal('show');
+}
+
+function addComment() {
     var commentInput = document.getElementById('commentInput');
     var commentList = document.getElementById('commentList');
+    var commentText = commentInput.value;
 
-     var commentText = commentInput.value;
+    var commentCard = document.createElement('div');
+    commentCard.className = 'card mb-3';
+    commentCard.innerHTML = `
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-25" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Prenom Nom</h5>
+                    <p class="card-text">${commentText}</p>
+                    <p class="card-text"><small class="text-body-secondary">Il y'a 3mn</small></p>
+                </div>
+            </div>
+        </div>
+    `;
 
-     var commentCard = document.createElement('div');
-     commentCard.className = 'card mb-3';
-     commentCard.innerHTML = `
-         <div class="row g-0">
-             <div class="col-md-4">
-                 <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-25" alt="...">
-             </div>
-             <div class="col-md-8">
-                 <div class="card-body">
-                     <h5 class="card-title">Prenom Nom</h5>
-                     <p class="card-text">${commentText}</p>
-                     <p class="card-text"><small class="text-body-secondary">Il y'a 3mn</small></p>
-                 </div>
-             </div>
-         </div>
-     `;
+    commentList.appendChild(commentCard);
 
-     commentList.appendChild(commentCard);
+    // Sauvegarder le commentaire dans le local storage
+    saveCommentToLocalStorage(commentText);
 
-     saveCommentToLocalStorage(commentText);
-
-     commentInput.value = '';
-
+    commentInput.value = '';
 }
 
-// fonction pour sauvegarder  les données dans le local storage
 function saveCommentToLocalStorage(comment) {
-    var comments = JSON.parse(localStorage.getItem('comments')) || [];
+    var commentModal = document.getElementById('comment-modal');
+    var articleId = parseInt(commentModal.getAttribute('data-article-id'));
+    var articleCommentsKey = 'comments_' + articleId;
+    console.log(articleCommentsKey)
+    var comments = JSON.parse(localStorage.getItem(articleCommentsKey)) || [];
     comments.push(comment);
-    localStorage.setItem('comments', JSON.stringify(comments));
+    localStorage.setItem(articleCommentsKey, JSON.stringify(comments));
 }
 
-// fonction pour charger les données du localstorage dans div commentList 
-function loadCommentsFromLocalStorage() {
+function loadCommentsFromLocalStorage(articleId) {
     var commentList = document.getElementById('commentList');
-    var comments = JSON.parse(localStorage.getItem('comments')) || [];
+    var articleCommentsKey = 'comments_' + articleId;
+    var comments = JSON.parse(localStorage.getItem(articleCommentsKey)) || [];
 
-    console.log(comments)
+    // Effacer les commentaires existants
+    commentList.innerHTML = '';
+
+    console.log('Commentaires '+comments);
+    console.log('ID'+articleId);
 
     // Créer et afficher les cartes de commentaires
     comments.forEach(function(commentText) {
+        console.log(commentText);
         var commentCard = document.createElement('div');
         commentCard.className = 'card mb-3 h-25';
         commentCard.innerHTML = `
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-25" class="img-fluid rounded-start h-50" alt="...">
+                    <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid rounded-start h-25" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -100,6 +197,18 @@ function loadCommentsFromLocalStorage() {
 
 document.getElementById('send-button').addEventListener('click', addComment);
 
-// Charger les commentaires depuis le local storage au chargement de la page
-window.addEventListener('load', loadCommentsFromLocalStorage);
+$('#comment-modal').on('hidden.bs.modal', function () {
+    // Supprimer la classe du fond noir après la fermeture du deuxième modal
+    $('.modal-backdrop').remove();
+  });
 
+window.addEventListener('load', generateArticleCards);
+
+window.addEventListener('DOMContentLoaded', function() {
+    // Obtenir l'ID de l'article actuel du modal de commentaire
+    var commentModal = document.getElementById('comment-modal');
+    var articleId = parseInt(commentModal.getAttribute('data-article-id'));
+
+    // Charger les commentaires depuis le local storage
+    loadCommentsFromLocalStorage(articleId);
+});

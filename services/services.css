@@ -7,7 +7,7 @@ body{
     border: 1px solid transparent;
 }
 
-ul{
+/* ul{
     list-style: none;
     padding: 0;
 }
@@ -19,11 +19,7 @@ li{
 a{
     text-decoration: none;
     color: white;
-}
-
-nav{
-    border-bottom: 5px solid var(--orange);
-}
+} */
 
 nav a{
     color: black !important;
@@ -98,14 +94,8 @@ nav a{
 
 /* flipCard */
 
-header{
-    border: 2px solid orangered;
-}
-
 /* main */
-main{
-    border: 1px solid red;
-}
+
 /* section bannière */
 .banniere{
     background-image: url(../public/images/banniere-technologie-orange.jpg);
@@ -127,6 +117,10 @@ main{
     font-size: 18px;
     color: white;
     font-weight: bold;
+}
+
+.banniere a{
+    text-decoration: none;
 }
 
 .banniereContent .linkAccueil a{
@@ -244,6 +238,7 @@ main{
     font-size: 20px;
     font-weight: bold;
     color: var(--orange) !important;
+    text-decoration: none;
 }
 /* section services */
 
@@ -478,6 +473,7 @@ footer{
     .servicesContent h3{
         font-size: 30px;
     }
+
 
     .servicesContent p{
         font-size: 20px;

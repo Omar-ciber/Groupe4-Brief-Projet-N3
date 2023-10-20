@@ -55,6 +55,10 @@ button:hover{
 #list{
     margin: 0 auto;
 }
+#mycard{
+    height: 20% !important;
+
+}
 @media screen and (min-width: 768px) and (max-width: 985px) {
 
     #row-cols-2 ,#articleRow{
@@ -67,6 +71,38 @@ button:hover{
         width: 350px !important;
 
     }
+   
 
     
+}
+
+@media screen and (max-width: 768px){
+
+    #banner{
+        height: 50vh;
+    }
+
+    #services .card{
+        height: 20vh !important;
+
+    }
+    #une2{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0 auto !important;
+        justify-content: center;
+    }
+    #une2 p{
+        font-size: 12px;
+    }
+    
+    #comment{
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    #mycard{
+        height: 20% !important;
+
+    }
 }

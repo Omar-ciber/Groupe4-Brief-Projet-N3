@@ -1,0 +1,49 @@
+h4{
+    text-align: center;
+}
+.divcontainer{
+    display: flex;
+    margin: 0 13%;
+    justify-content: center;
+   margin-left: 80px;
+   height: 500px;
+}
+.divcontainer .divdroite{
+    border: 1PX solid #d3d9d46b ;
+    width: 380px;
+    height: 340px;
+    border: 1px solid rgb(159, 156, 156);
+   border-radius: 1px;
+   justify-content: center;
+   
+
+}
+.divcontainer .divdroite .P1{
+
+    justify-content: center;
+}
+h6{
+    font-weight: bold;
+}
+.divcontainer .divgauche{
+    position:  relative;
+    right: 110px;
+    border: 3PX solid rgba(128, 123, 123, 0.969);
+border-radius: 0 20px 0 20px;
+/* padding-right: 5px; */
+/* justify-content: center; */
+border-radius: 10px 30px 0px 90px;
+width: 380px;
+height: 300px;
+margin-top: 25px;
+}
+img{
+    width: 250px;
+}
+h6{
+    padding-left: 60px;
+    padding-top: 40px;
+}
+p{
+    padding-left: 60px;
+}

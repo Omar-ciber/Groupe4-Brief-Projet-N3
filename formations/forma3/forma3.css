@@ -1,10 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 
 #banner{
-    background: linear-gradient(0deg, #0000008f, #0000008f), url("../../a-propos/image_a-propos/bcg_propos.png");
+    background: linear-gradient(0deg, #0000008f, #0000008f), url("../forma2/image_forma2/3.jpg");
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,9 +19,9 @@
 #banner .banner-texte{
     margin-left: 80px !important;
 }
-
-
-
+.banner-texte .banner-Title{
+    margin-top: 50%;
+}
 
 /* main */
 
@@ -43,8 +44,127 @@
     pointer-events: none;
     color: #aaa;
 }
+.logo img{
+    width: 5%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px grey;
+    
+}
 
+ /* ...coments.... */
 
+ /* .btn {
+   text-decoration: none;
+   color: white;
+   background: var(--orange);
+   padding: .5em;
+   border-radius: 2px;
+   display: inline-block;
+ }
+
+ .wrapper {
+   margin: 1rem 0;
+ }
+ .container {
+   max-width: 960px;
+   width: 100%;
+   margin: 0 auto;
+ } */
+ /* .petronas-youtube {
+   overflow: hidden;
+ }
+ .video-list-header {
+   padding: 0 1rem;
+   color: green;
+   margin: 0;
+ } */
+ /* .video-player {
+   padding: 1rem 0;
+   float: left;
+   width: 70%;
+   iframe {
+     display: block;
+     margin: 0 auto;
+   }
+ } */
+ /* .video-sidebar {
+   float: left;
+   width: 30%;
+ }
+ .video-list-container {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+   .video-container {
+     float: left;
+     width: 180px;
+     padding: 1rem;
+   }
+   .video-thumbnails {
+     position: relative;
+     img {
+       max-width: 100%;
+     } */
+     /* .video-index {
+       position: absolute;
+       color: white;
+       background: $green;
+       padding: .5rem;
+       bottom: .5rem;
+       right: .25rem;
+     }
+   } */
+   /* .video-details {
+     .video-title {
+       font-size: 1em;
+       margin: 0;
+       padding: .5rem 0;
+     }
+     .video-uploader,
+     .video-view {
+       font-size: .8em;
+       margin: 0;
+     }
+   }
+ } */
+ .video-comments {
+   width: 100%;
+   margin: 1rem auto 0;
+   .comments {
+     resize: none;
+     width: 100%;
+     padding: 1rem;
+     font-size: 1em;
+     font-family: 'Lato', sans-serif;
+   }
+   .comments-list {
+     list-style: none;
+     padding: 0;
+   }
+   .commenter {
+     font-size: .8em;
+   }
+   .comment-post {
+     margin-top: 1rem;
+   }
+ }
+  /* ...coments.... */
+ .sidebar-dvd{
+    border: 1px solid black;
+    background-color: rgb(246, 242, 242);
+    padding: 2%;
+    border-radius: 2%;
+    margin: 0 auto;
+ }
+ .persComent img{
+    border-radius: 50%;
+    width: 50%;
+ }
+.play-dvd{
+    /* border: 1px solid black; */
+    padding: 20px;
+}
 
 /* main */
 

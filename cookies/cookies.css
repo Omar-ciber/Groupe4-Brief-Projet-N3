@@ -2,18 +2,20 @@ h3{
    padding-left:45px;
     color: #E94D1A;
     font-size: 22PX;
+    text-align: center;
     
 }
 h4{
     color: #E94D1A;
      padding-left: 33px;
      font-size: 20PX;
-    
+     text-align: center;
 }
 P{
     padding-left: 33px;
     font-size:19PX;
     /* font-weight: 80; */
+    text-align: center;
   
 }
 .linkAccueil{

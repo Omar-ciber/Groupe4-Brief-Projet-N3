@@ -35,50 +35,46 @@
 
     <!-- header -->
     <header class="">
-        <nav class="nav-fixed navbar navbar-expand-lg bg-white fixed-top shadow">
-            <div class="container-fluid d-flex justify-content-between bg-white">
-                <div>
-                    <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png"
-                            id="logo" alt=""></a>
-                </div>
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <nav class="navbar navbar-expand-lg bg-white shadow fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo"
+                        alt=""></a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item text-black">
-                                <a class="nav-link text-black fw-bold" aria-current="page" href="../accueil/accueil.html">Accueil</a>
+                                <a class="nav-link text-black active fw-bold" aria-current="page" href="#">Accueil</a>
                             </li>
                             <li class="nav-item ">
                                 <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../services/services.html"
-                                    class="nav-link text-black fw-bold">Services</a>
+                                <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../formations/formation.html"
-                                    class="nav-link text-black fw-bold">Formations</a>
+                                <a href="../formations/formation.html" class="nav-link text-black fw-bold">Formations</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../temoignage/temoignage.html"
-                                    class="nav-link text-black fw-bold">Temoignages</a>
+                                <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
                             </li>
                         </ul>
-                        <div class="d-none" id="us-contact">
-                            <button class="btn bgOrange text-white p-2">Nous contacter</button>
+                        <div id="contact-us">
+                            <a href="" class="text-decoration-none "><button class="btn bgOrange text-white p-2">Nous
+                                    contacter</button></a>
                         </div>
                     </div>
-                </div>
-                <div id="contact-us">
-                    <button class="btn bgOrange text-white p-2">Nous contacter</button>
                 </div>
             </div>
         </nav>

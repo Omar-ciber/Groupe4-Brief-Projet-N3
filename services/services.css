@@ -1,43 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    border: 1px solid transparent;
+
+
+/* main */
+
+/* section bannière */
+.banniere {
+    background-image: url(../public/images/banniere-technologie-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    margin-top: 135px;
 }
 
-/* ul{
-    list-style: none;
-    padding: 0;
-}
-
-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
+.banniereContent h1 {
     color: white;
-} */
-
-nav a{
-    color: black !important;
+    font-size: 70px;
+    font-weight: bold;
 }
+
+.banniereContent p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.banniere a {
+    text-decoration: none;
+}
+
+.banniereContent .linkAccueil a {
+    color: white !important;
+}
+
+.banniereContent .linkPage a {
+    color: var(--orange);
+}
+
+/* section bannière */
+
+/* section services */
+
+.servicesContent h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.servicesContent p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 30%;
+}
+
+.servicesCart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 50px;
+    row-gap: 50px;
+}
+
 
 /* flipCard */
-.test{
-    /* border: 2px solid rgb(119, 0, 255); */
+.test {
     cursor: pointer;
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.front,.back {
+.front,
+.back {
     width: 100%;
     height: 100%;
-    /* border: 2px solid goldenrod; */
     overflow: hidden;
     backface-visibility: hidden;
     position: absolute;
@@ -49,7 +88,6 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid green; */
 }
 
 .back {
@@ -76,7 +114,7 @@ nav a{
     text-align: center;
 }
 
-.back-content button{
+.back-content button {
     width: 60%;
     font-size: 20px;
     background-color: white;
@@ -94,189 +132,134 @@ nav a{
 
 /* flipCard */
 
-/* main */
 
-/* section bannière */
-.banniere{
-    background-image: url(../public/images/banniere-technologie-orange.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 3%;
-    margin-top: 135px;
-}
 
-.banniereContent h1{
-    color: white;
-    font-size: 70px;
-    font-weight: bold;
-}
-
-.banniereContent p{
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-}
-
-.banniere a{
-    text-decoration: none;
-}
-
-.banniereContent .linkAccueil a{
-    color: white !important;
-}
-
-.banniereContent .linkPage a{
-    color: var(--orange);
-}
-/* section bannière */
-
-/* section services */
-
-.servicesContent h3{
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.servicesContent p{
-    font-size: 18px;
-    font-weight: 600;
-    width: 30%;
-}
-
-.servicesCart{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 50px;
-    row-gap: 50px;
-}
-
-.servicesCart .carte{
+.servicesCart .carte {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30% 5%;
+    /*  */
 }
 
-.servicesCart .carte .front-content{
+.servicesCart .carte .front-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
 }
 
-.servicesCart .carte .cartText{
+.servicesCart .carte .cartText {
     font-size: 20px;
     color: var(--orange);
     font-weight: 600;
 }
 
-.servicesCart .carte .iconService{
+.servicesCart .carte .iconService {
     font-size: 120px;
     color: var(--orange);
     margin-bottom: 40px;
 }
 
-.servicesCart .modal h4{
+.servicesCart .modal h4 {
     font-size: 35px;
     margin-bottom: 4%;
     font-weight: 700;
     text-decoration: underline 4px solid var(--orange);
+    text-underline-offset: 15px;
 }
 
-/* .servicesCart .modal .modal-dialog{
-    border: 1px solid blue;
-} */
-
-.servicesCart .modal .modal-header button{
+.servicesCart .modal .modal-header button {
     border: none;
     background: none;
 }
 
-.servicesCart .modal .modal-header button i{
+.servicesCart .modal .modal-header button i {
     font-size: 40px;
     color: var(--orange);
 }
 
-.servicesCart .modal .cartimg img{
+.servicesCart .modal .cartimg img {
     width: 100%;
 }
 
-/* .servicesCart .modal .cart {
-    border: 1px solid var(--orange);
-} */
-
-.servicesCart .modal .cart:hover{
+.servicesCart .modal .cart:hover {
     position: relative;
-    bottom: 15px;
+    bottom: 10px;
     border-bottom: 2px solid var(--orange) !important;
     transition: 1s ease !important;
 }
 
-.servicesCart .modal .cart p{
+.servicesCart .modal .cart p {
     margin-top: 5%;
 }
 
-.servicesCart .modal .cart button{
+.servicesCart .modal .cart button {
     background-color: white;
     border: 2px solid var(--orange);
     border-radius: 15px;
     margin-bottom: 4%;
 }
 
-.servicesCart .modal .cart button:hover{
+.servicesCart .modal .cart button:hover {
     background-color: var(--orange);
     border: none;
 }
 
-.servicesCart .modal .cart button:hover a{
+.servicesCart .modal .cart button:hover a {
     color: white !important;
 }
 
-.servicesCart .modal a{
+.servicesCart .modal a {
     font-size: 20px;
     font-weight: bold;
     color: var(--orange) !important;
     text-decoration: none;
 }
+
+.tmpModal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
 /* section services */
 
 /* main */
 
 
 /* footer */
-footer{
+footer {
     background-color: var(--orange);
     margin-top: 8%;
 }
 
-.footerContent .logoFooter{
+.footerContent .logoFooter {
     background-color: white;
     position: relative;
     bottom: 40px;
 }
 
-.footerContent .logoFooter:hover{
+.footerContent .logoFooter:hover {
     bottom: 0;
     background-color: rgb(0, 1, 5);
     transition: 2s ease;
 }
 
-.footerContent .logoFooter img{
+.footerContent .logoFooter img {
     width: 100%;
 }
 
-.footerContent .contentFooter{
+.footerContent .contentFooter {
     padding: 4% 8% 0 8%;
 }
 
-.contentFooter .footerIpt{
+.contentFooter .footerIpt {
     border-radius: 15px;
     margin-bottom: 6%;
 }
 
-.contentFooter .footerIpt input{
+.contentFooter .footerIpt input {
     width: 60%;
     border-radius: 15px 0 0 15px;
     background-color: var(--orange);
@@ -284,12 +267,12 @@ footer{
     padding-left: 20px;
 }
 
-.contentFooter .footerIpt input::placeholder{
+.contentFooter .footerIpt input::placeholder {
     font-size: 20px;
     color: white;
 }
 
-.contentFooter .footerIpt button{
+.contentFooter .footerIpt button {
     background-color: white;
     width: 40%;
     border-radius: 15px;
@@ -298,77 +281,80 @@ footer{
     color: var(--orange);
 }
 
-.contentFooter .pagesFooter h6{
+.contentFooter .pagesFooter h6 {
     font-size: 35px;
     font-weight: 600;
     color: white;
     margin-bottom: 3%;
 }
 
-.contentFooter .pagesFooter{
+.contentFooter .pagesFooter {
     margin-bottom: 6%;
 }
 
-.contentFooter .pagesFooter li{
+.contentFooter .pagesFooter li {
     margin-bottom: 20px;
 }
 
-.contentFooter .pagesFooter li a{
+.contentFooter .pagesFooter li a {
     font-size: 18px;
     font-weight: 700;
     color: white !important;
 }
 
-.contentFooter .pagesFooter li a:hover{
+.contentFooter .pagesFooter li a:hover {
     margin-left: 20px;
     color: black !important;
     transition: 1s ease;
 }
 
-.contentFooter .traitFooter{
+.contentFooter .traitFooter {
     background-color: white;
     height: 4px;
     border: none;
     margin-bottom: 2%;
 }
 
-.contentFooter .copyrightFooter .leftCopy{
+.contentFooter .copyrightFooter .leftCopy {
     color: white;
     font-size: 18px;
     font-weight: 500;
 }
 
-.contentFooter .copyrightFooter .rightCopy i{
+.contentFooter .copyrightFooter .rightCopy i {
     color: white;
     margin-left: 15px;
 }
 
-.contentFooter .copyrightFooter .rightCopy a:hover{
+.contentFooter .copyrightFooter .rightCopy a:hover {
     position: relative;
     bottom: 8px;
     transition: 2s ease;
 }
+
 /* footer */
 
-@media(max-width: 700px){
+@media(max-width: 800px) {
 
-    .banniere h1{
+    .banniere h1 {
         font-size: 35px;
     }
-    .banniere p{
+
+    .banniere p {
         font-size: 16px;
     }
 
-    .services{
+    .services {
         margin: 0 15px;
     }
 
-    .servicesContent h3{
+    .servicesContent h3 {
         font-size: 24px;
     }
 
-    .servicesContent p{
+    .servicesContent p {
         font-size: 18px;
+        margin-bottom: 15px;
         width: 100%;
     }
 
@@ -379,12 +365,13 @@ footer{
         row-gap: 50px;
     }
 
-    .carte .front-content i{
-        font-size: 18px;
-        margin-bottom: 12px !important;
+    .servicesCart .carte .iconService {
+        font-size: 60px;
+        color: var(--orange);
+        margin-bottom: 40px;
     }
 
-    .back-content p{
+    .back-content p {
         font-size: 14px;
         margin-bottom: 15px;
     }
@@ -397,23 +384,31 @@ footer{
         font-weight: bold;
     }
 
-    .modal-body h4{
+    .modal-body h4 {
         font-size: 20px !important;
+        text-decoration: underline;
+        text-underline-offset: 15px;
     }
 
-    .modal-body .row{
+    /* .modal-body .row{
         display: grid !important;
         grid-template-columns: 1fr;
         gap: 20px;
+    } */
+
+    .tmpModal {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
-    footer{
+    footer {
         width: 100% !important;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    .footerContent{
+    .footerContent {
         display: block !important;
 
     }
@@ -426,7 +421,7 @@ footer{
     }
 
 
-    .contentFooter{
+    .contentFooter {
         width: 100%;
         margin-top: 20px;
         padding: 0;
@@ -437,45 +432,53 @@ footer{
         border: none !important;
     }
 
-    .contentFooter .footerIpt input,button{
+    .contentFooter .footerIpt input,
+    button {
         width: 100% !important;
         margin-bottom: 2% !important;
     }
 
-    .contentFooter .footerIpt input{
+    .contentFooter .footerIpt input {
         border: 1px solid white;
         border-radius: 15px;
     }
 
-    .contentFooter  .copyrightFooter{
+    .contentFooter .copyrightFooter {
         display: block !important;
         text-align: center;
     }
 
 }
 
-/* 700px and 1100px */
+/* 700px and 1300px */
 
-@media only screen and (min-width: 701px) and (max-width:930px){
-    .modal-body h4{
+@media only screen and (min-width: 801px) and (max-width: 1300px) {
+    .modal-body h4 {
         font-size: 20px !important;
     }
 
-    .modal-body .row{
+    .modal-body .row {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .modal-body .row .cl {
+        width: 100%;
+    }
+
+    .modal-body .row {
         display: grid !important;
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .modal-body .row .cl{
-        width: 100%;
-    }
-    .servicesContent h3{
+    .servicesContent h3 {
         font-size: 30px;
     }
 
 
-    .servicesContent p{
+    .servicesContent p {
         font-size: 20px;
         width: 100%;
     }
@@ -491,12 +494,19 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 40% 5%;
+        padding: 30% 5%;
     }
 
-    .back-content p{
-        font-size: 14px;
-        margin-bottom: 15px;
+    .servicesCart .carte .iconService {
+        font-size: 90px;
+        color: var(--orange);
+        margin-bottom: 40px;
+    }
+
+    .back-content p {
+        font-size: 12px;
+        margin-bottom: 20px !important;
+        border: 1px solid white;
     }
 
     .back-content button {
@@ -507,13 +517,19 @@ footer{
         font-weight: bold;
     }
 
-    footer{
+    .tmpModal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    footer {
         width: 100% !important;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    .footerContent{
+    .footerContent {
         display: flex;
     }
 
@@ -524,14 +540,24 @@ footer{
         width: 100%;
     }
 
-    /* .contentFooter .footerIpt input{
-        border: 1px solid white;
-        border-radius: 15px;
-    } */
-
-    .contentFooter{
+    .contentFooter {
         margin-top: 20px;
         width: 100%;
         padding: 0 !important;
+    }
+}
+
+
+/*  */
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+    .servicesCart .carte .iconService {
+        font-size: 90px;
+        color: var(--orange);
+        margin-bottom: 40px;
+    }
+
+    .back-content p {
+        font-size: 16px;
+        margin-bottom: 30px !important;
     }
 }

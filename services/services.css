@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
 
 
 /* main */
@@ -335,6 +341,12 @@ footer {
 /* footer */
 
 @media(max-width: 800px) {
+    .footerContent .logoFooter {
+        background-color: brown;
+        border: 1px solid;
+        width: 100%;
+        display: block;
+    }
 
     .banniere h1 {
         font-size: 35px;
@@ -417,7 +429,7 @@ footer {
         background-color: brown;
         border: 1px solid;
         width: 100%;
-        display: none;
+        display: block;
     }
 
 

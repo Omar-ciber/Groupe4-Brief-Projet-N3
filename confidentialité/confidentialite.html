@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- style css -->
     <link rel="stylesheet" href="./confidentialite.css">
-    <link rel="stylesheet" href="../public/nav.css">
+    <link rel="stylesheet" href="../public/style/header.css">
     <link rel="stylesheet" href="../public/style/style.css">
     <title>Politique de confidentialité</title>
 </head>
@@ -33,55 +33,65 @@
     <!-- icones -->
 
     <!-- header -->
-    <header class="">
-        <nav class="navigation  bg-white fixed-top shadow">
-            <a href="../accueil/accueil.html"><img src="../public/images/logo2.png" alt="" class="logoNav"></a>
-        
-            <div class="menu">
-                <ul class="first">
-                    <li><a href="../accueil/accueil.html">Accueil</a></li>
-                    <li><a href="../a-propos/a-propos.html">A propos</a></li>
-                    <li><a href="../services/services.html">Services</a></li>
-                    <li><a href="../formations/accueilforma/accueilforma.html">Formations</a></li>
-                    <li><a href="../articles/articles.html">Articles</a></li>
-                    <li><a href="../temoignage/temoignage.html">Témoignages</a></li>
-                </ul>
-            </div>
-        
-            <div class="dropMenu dropMenuLeft" id="dropMenu">
-                <div class="menuDrop">
-                    <i class="fa-solid fa-circle-xmark" id="close"></i>
-        
-                    <ul>
-                        <li><a href="../accueil/accueil.html">Accueil</a></li>
-                        <li><a href="../a-propos/a-propos.html">A propos</a></li>
-                        <li><a href="../services/services.html">Services</a></li>
-                        <li><a href="../formations/accueilforma/accueilforma.html">Formations</a></li>
-                        <li><a href="../articles/articles.html">Articles</a></li>
-                        <li><a href="../temoignage/temoignage.html">Témoignages</a></li>
+    <nav class="navbar navbar-expand-lg bg-white shadow sticky-top top-0">
+        <div class="container">
+            <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo"
+                    alt=""></a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black active fw-bold" aria-current="page"
+                                href="../accueil/accueil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../formations/accueilforma/accueilforma.html" class="nav-link text-black fw-bold">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
+                        </li>
                     </ul>
-        
-                    <button class="btn btnDrop"><a href="../contact/contact.html">Nous contacter</a></button>
+                    <div id="contact-us">
+                        <a href="../contact/contact.html" class="text-decoration-none "><button
+                                class="btn bgOrange text-white p-2">Nous
+                                contacter</button></a>
+                    </div>
                 </div>
             </div>
-        
-            <span><i class="fa-solid fa-bars burger" id="burger"></i></span>
-        
-            <button class="btn btnNav"><a href="../contact/contact.html">Nous contacter</a></button>
-        </nav>
+        </div>
+    </nav>
+    <!-- header -->
 
-        <!-- Bannière -->
-        <section class="banniere">
-            <div class="banniereContent text-center mt-5 mb-5">
-                <h1>Politique de confidentialité</h1>
-                <p>
-                    <span class="linkAccueil"><a href="../accueil/accueil.html">Accueil</a></span>
-                    /
-                    <span class="linkPage"><a href="../confidentialité/confidentialite.html">confidentialité</a></span>
-                </p>
-            </div>
-        </section>
-    </header>
+    <!-- Bannière -->
+    <section class="banniere">
+        <div class="banniereContent text-center mt-5 mb-5">
+            <h1>Politique de confidentialité</h1>
+            <p>
+                <span class="linkAccueil"><a href="../accueil/accueil.html">Accueil</a></span>
+                /
+                <span class="linkPage"><a href="../services/services.html">Confidentialité</a></span>
+            </p>
+        </div>
+    </section>
+    <!-- Bannière -->
 
     <!-- main -->
     <main>

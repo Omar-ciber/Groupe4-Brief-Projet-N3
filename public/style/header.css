@@ -2,10 +2,6 @@
     height: 15vh;
     width: 100%;
 }
-/* .nav-fixed{
-    position: sticky !important;
-    top: 0 !important;
-} */
 .active{
     color: var(--orange) !important; ;
 }
@@ -15,6 +11,12 @@
 }
 .usContact{
     display: block !important;
+}
+#contact-us button:hover{
+    background-color: white !important;
+    border-radius:  5px !important;
+    color: var(--orange) !important;
+    border-color: var(--orange);
 }
 .radiusButton{
     border-radius: 0 20px 0 20px;

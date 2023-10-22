@@ -16,6 +16,67 @@ a {
     color: white;
 }
 
+/* navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+.navigation .logoNav {
+    width: 80px;
+}
+
+.navigation .menu {
+    width: 65%;
+}
+
+.navigation .menu .first {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 3%;
+}
+
+.navigation .menu ul li {
+    margin: 2% 2%;
+    list-style-type: none;
+    margin-bottom: 0 !important;
+}
+
+.navigation .menu ul li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navigation .btn {
+    background-color: var(--orange);
+}
+
+.burger {
+    display: none !important;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.navigation .active {
+    color: var(--orange) !important;
+}
+
+.dropMenu {
+    display: none;
+}
+
+/* navigation */
+
 /* section bannière */
 .banniere {
     background-image: url(../public/images/banniere-technologie-orange.jpg);
@@ -24,7 +85,7 @@ a {
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 3%;
-    margin-top: 125px;
+    margin-top: 105px;
 }
 
 .banniereContent h1 {
@@ -233,8 +294,76 @@ footer {
 /* media queries */
 
 /* 800px */
-@media(max-width: 800px) {
+@media(max-width: 750px) {
+    /* navigation */
+    .navigation .menu{
+        display: none;
+    }
+
+    .navigation .logoNav{
+        width: 35px;
+    }
+
+    .navigation .btnNav{
+        display: none;
+    }
+
+    .navigation .burger{
+        display: block !important;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navigation .dropMenu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh !important;
+        background-color: white;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation .dropMenu .menuDrop{
+        border: 1px solid white;
+        width: 90%;
+    }
+
+    .menuDrop i{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        color: var(--orange);
+    }
+
+    .menuDrop ul{
+        padding: 0;
+    }
+
+    .menuDrop ul li{
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .menuDrop ul li a{
+        font-size: 20px;
+        color: black;
+    }
+
+    .menuDrop .btnDrop {
+        background-color: var(--orange);
+    }
+    /* navigation */
+
     /* banniere */
+    .banniere{
+        margin-top: 50px;
+    }
     .banniere h1{
         font-size: 35px;
     }
@@ -275,6 +404,7 @@ footer {
     }
 
     .contentFooter {
+        display: block !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
@@ -336,7 +466,30 @@ footer {
 
 /* 700px and 1100px */
 
-@media only screen and (min-width: 801px) and (max-width: 1250px) {
+@media only screen and (min-width: 751px) and (max-width: 1250px) {
+    /* navigation */
+    .navigation .menu{
+        display: block;
+    }
+
+    .navigation .menu .logoNav{
+        width: 10%;
+    }
+
+    .navigation .menu a{
+        font-size: 13px !important;
+    }
+
+    .navigation .btn{
+        display: block;
+    }
+
+    .navigation .burger{
+        display: none;
+    }
+
+    /* navigation */
+
     main .formulaire{
         margin-top: 60px;
     }

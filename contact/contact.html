@@ -20,47 +20,40 @@
 
     <!-- header -->
     <header class="">
-        <nav class="navbar navbar-expand-lg bg-white shadow fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo"
-                        alt=""></a>
-                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                            <li class="nav-item text-black">
-                                <a class="nav-link text-black fw-bold" aria-current="page" href="../accueil/accueil.html">Accueil</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../formations/formation.html" class="nav-link text-black fw-bold">Formations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
-                            </li>
-                        </ul>
-                        <div id="contact-us">
-                            <button class="btn bgOrange text-white p-2"><a href="./contact.html" class="text-decoration-none fw-bold">Nous contacter</a></button>
-                        </div>
-                    </div>
+        <nav class="navigation  bg-white fixed-top shadow">
+            <a href="../accueil/accueil.html"><img src="../public/images/logo2.png" alt="" class="logoNav"></a>
+        
+            <div class="menu">
+                <ul class="first">
+                    <li><a href="../accueil/accueil.html">Accueil</a></li>
+                    <li><a href="../a-propos/a-propos.html">A propos</a></li>
+                    <li><a href="../services/services.html">Services</a></li>
+                    <li><a href="../formations/accueilforma/accueilforma.html">Formations</a></li>
+                    <li><a href="../articles/articles.html">Articles</a></li>
+                    <li><a href="../temoignage/temoignage.html">Témoignages</a></li>
+                </ul>
+            </div>
+        
+            <div class="dropMenu dropMenuLeft" id="dropMenu">
+                <div class="menuDrop">
+                    <i class="fa-solid fa-circle-xmark" id="close"></i>
+        
+                    <ul>
+                        <li><a href="../accueil/accueil.html">Accueil</a></li>
+                        <li><a href="../a-propos/a-propos.html">A propos</a></li>
+                        <li><a href="../services/services.html">Services</a></li>
+                        <li><a href="../formations/accueilforma/accueilforma.html">Formations</a></li>
+                        <li><a href="../articles/articles.html">Articles</a></li>
+                        <li><a href="../temoignage/temoignage.html">Témoignages</a></li>
+                    </ul>
+        
+                    <button class="btn btnDrop"><a href="../contact/contact.html">Nous contacter</a></button>
                 </div>
             </div>
+        
+            <span><i class="fa-solid fa-bars burger" id="burger"></i></span>
+        
+            <button class="btn btnNav"><a href="../contact/contact.html">Nous contacter</a></button>
         </nav>
     </header>
 
@@ -81,7 +74,8 @@
         <!-- Bannière -->
 
         <!-- titre contact -->
-        <!-- <div class="title d-flex justify-content-center align-content-center mb-5">
+        
+        <div class="title d-flex justify-content-center align-content-center mb-5">
             <div class="d-flex">
                 <div id="circle">
                     <i class="fa-regular fa-circle orange"></i>
@@ -103,7 +97,7 @@
                     <i class="fa-regular fa-circle orange"></i>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
         <!-- section Contact -->
@@ -127,23 +121,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8 formulaire">
-                    <form action="">
+                    <form action="" class="FormContact">
                         <div class="put">
                             <div class="mb-3 ipt">
                                 <label for="nomComplet" class="form-label">Prénom & Nom</label>
-                                <input type="text" class="form-control" id="nomComplet" placeholder="Masamba doucouré dimbory macoumba Faye ">
+                                <input type="text" class="form-control" id="nomComplet" name="prenomNom" placeholder="Masamba doucouré dimbory macoumba Faye ">
                             </div>
                             <div class="mb-3 ipt">
-                                <label for="Email" class="form-label">Adresse Email</label>
-                                <input type="email" class="form-control" id="email1" placeholder="nomComplet@example.com">
+                                <label for="addressEmail" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control" name="email" id="addresEmail" placeholder="nomComplet@example.com">
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="8" placeholder="Votre messsage"></textarea>
+                            <textarea class="form-control" id="message" name="mess" rows="8" placeholder="Votre messsage"></textarea>
                         </div>
 
-                        <div class="text-end forBouton"><button class="" style="background-color: var(--orange);">Envoyer</button></div>
+                        <div class="text-end forBouton"><button class="btn w-25" id="boutContact" style="background-color: var(--orange);">Envoyer</button></div>
                     </form>
                 </div>
             </div>
@@ -157,9 +151,9 @@
                 <img src="../public/images/logo.png" alt="">
             </div>
             <div class="col-12 col-md-8 contentFooter">
-                <form class="border form d-flex footerIpt">
-                    <input type="email" class="form-control" id="email" placeholder="Votre addresse email..." required>
-                    <button class="btn">S'incrire maintenant!</button>
+                <form class="border formFooter d-flex footerIpt">
+                    <input type="email" class="form-control" id="email" placeholder="Votre addresse email...">
+                    <button class="btn" id="btnFooter">S'incrire maintenant!</button>
                 </form>
                 <div class="row pagesFooter">
                     <div class="col-12 col-md-6">
@@ -198,6 +192,7 @@
 
     <!-- script -->
     <script src="../public/script/script.js"></script>
+    <script src="./contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>

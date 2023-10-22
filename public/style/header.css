@@ -1,25 +1,33 @@
-#logo{
+#logo {
     height: 15vh;
     width: 100%;
 }
-/* .nav-fixed{
-    position: sticky !important;
-    top: 0 !important;
-} */
-.active{
-    color: var(--orange) !important; ;
+
+.active {
+    color: var(--orange) !important;
+    ;
 }
 
-.contactUS{
+.contactUS {
     display: none !important;
 }
-.usContact{
+
+.usContact {
     display: block !important;
 }
-.radiusButton{
+
+#contact-us button:hover {
+    background-color: white !important;
+    border-radius: 5px !important;
+    color: var(--orange) !important;
+    border-color: var(--orange);
+}
+
+.radiusButton {
     border-radius: 0 20px 0 20px;
 }
-#social{
+
+#social {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -29,20 +37,24 @@
     z-index: 3;
 
 }
-#social a{
+
+#social a {
     width: 300px;
     text-align: right;
-    border-radius:20px ;
+    border-radius: 20px;
     transition: 1s;
-    transition-property:transform ;
+    transition-property: transform;
 
 }
-#social a:hover{
-   transform: translateX(200px);
+
+#social a:hover {
+    transform: translateX(200px);
 }
-.fa-circle{
+
+.fa-circle {
     font-size: 10px;
 }
-#circle{
+
+#circle {
     margin: -2px 7px 0 7px;
 }

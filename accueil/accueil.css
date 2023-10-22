@@ -24,10 +24,7 @@
 #services .card i{
     font-size: 60px;
 }
-/* .team-card{
-    display: flex;
-    justify-content: center;
-} */
+
 
 /* Section about */
 .badge1{
@@ -66,7 +63,7 @@
 /* section exploit */
 
 #exploit .card{
-    background-color: var(--transparent) !important;
+    background-color: white !important;
     height: 40vh;
     border-top: 3px solid var(--orange)!important;
 }
@@ -74,15 +71,33 @@
     font-size: 30px;
 }
 
+.bgExploit{
+    background-color: #E94D1A;
+}
+
 /* section temoignages */
 .carousel-control-prev, .carousel-control-next{
     background-color: var(--orange);
     width: 6vh;
-    height: 10%;
+    height: 20%;
     top: 50%;
     transform: translateY(-50%);
     opacity: 1;
 }
+
+
+/* section formations */
+#formations .card{
+
+    height: 80%;
+
+}
+#formations .card img{
+
+    height: 45%;
+
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 985px) {
     #services #row-cols-2{
@@ -94,7 +109,7 @@
     }
     #services #row-cols-2 .card{
         width: 350px !important;
-        height: 20vh;
+        height: 30vh;
 
     }
     #image-why{
@@ -110,8 +125,17 @@
     }
 
     #services .card{
-        height: 20vh !important;
+        height: 30vh !important;
 
+    }
+    .designIcons{
+        display: none !important;
+    }
+    #formations .card{
+        height: 100%;
+    }
+    #formations .card img{
+        height: 50%;
     }
     
 }

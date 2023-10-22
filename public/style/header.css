@@ -3,9 +3,12 @@
     width: 100%;
 }
 
+
 .active {
     color: var(--orange) !important;
     ;
+.active{
+    color: var(--orange) !important; ;
 }
 
 .contactUS {
@@ -15,7 +18,6 @@
 .usContact {
     display: block !important;
 }
-
 #contact-us button:hover {
     background-color: white !important;
     border-radius: 5px !important;
@@ -23,7 +25,13 @@
     border-color: var(--orange);
 }
 
-.radiusButton {
+#contact-us button:hover{
+    background-color: white !important;
+    border-radius:  5px !important;
+    color: var(--orange) !important;
+    border-color: var(--orange);
+}
+.radiusButton{
     border-radius: 0 20px 0 20px;
 }
 

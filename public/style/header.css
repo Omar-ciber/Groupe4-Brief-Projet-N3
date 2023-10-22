@@ -6,7 +6,8 @@
 
 .active {
     color: var(--orange) !important;
-    ;
+}
+
 .active{
     color: var(--orange) !important; ;
 }

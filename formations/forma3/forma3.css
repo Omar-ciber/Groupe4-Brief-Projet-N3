@@ -75,9 +75,13 @@
     border: 1px solid black;
     background-color: rgb(246, 242, 242);
     padding: 2%;
+    height: 500px;
     border-radius: 2%;
     margin: 0 auto;
+    padding: 0 auto;
+    overflow: scroll; 
  }
+
 .desc{
     font-size: 12px !important;
 }

@@ -33,7 +33,7 @@ nav a {
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 3%;
-    margin-top: 135px;
+    margin-top: 105px;
 }
 
 .banniereContent h1 {
@@ -193,11 +193,15 @@ footer {
 /* 700px */
 @media(max-width: 800px) {
     .banniere{
-        margin-top: 30%;
+        margin-top: 50px;
     }
 
     .banniereContent h1{
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .banniereContent p{
+        font-size: 12px;
     }
 
     .sectionConfidentielle {
@@ -231,7 +235,7 @@ footer {
     }
 
     .contentFooter .footerIpt {
-        border: none;
+        border: none !important;
     }
 
     .contentFooter .footerIpt input {
@@ -243,7 +247,7 @@ footer {
     }
 
     .contentFooter .footerIpt button {
-        background-color: white;
+        background-color: white !important;
         width: 100%;
         border-radius: 15px;
         font-size: 14px;
@@ -273,7 +277,7 @@ footer {
 
 @media only screen and (min-width: 700px) and (max-width:930px) {
     .banniere{
-        margin-top: 25%;
+        margin-top: 50px;
     }
     .banniereContent h1{
         font-size: 25px;

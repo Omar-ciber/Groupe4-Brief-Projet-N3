@@ -56,7 +56,7 @@
     color: var(--orange)!important;
 }
 
-h2{
+.mx-4{
     text-align: center;
 }
 .divcontainer{
@@ -64,8 +64,10 @@ h2{
     margin: 0 13%;
     justify-content: center;
     justify-items: center;
-   margin-left: 84px;
+   margin-left: 100px;
    height: 500px;
+  
+
 }
 .divcontainer .divdroite{
     border: 1PX solid #d3d9d46b ;
@@ -75,8 +77,13 @@ h2{
    border-radius: 1px;
    justify-content: center;
    
+   
 
 }
+/* .Diviconeh2orange{
+    -webkit-clip-path: polygon(50% 0%, 90% 48%, 50% 100%, 11% 50%);
+clip-path: polygon(50% 0%, 90% 48%, 50% 100%, 11% 50%);
+} */
 .divcontainer>.divdroite > .P1{
 
     justify-content: center;
@@ -113,7 +120,7 @@ p{
 }
 .divcontainer2{
     display: flex;
-    margin: 0 13%;
+    margin: 0 15%;
     justify-content: center;
    margin-left: 100px;
    height: 500px;

@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 ul {
     list-style: none;
     padding: 0;
@@ -20,7 +24,7 @@ a {
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 3%;
-    margin-top: 135px;
+    margin-top: 125px;
 }
 
 .banniereContent h1 {
@@ -228,12 +232,34 @@ footer {
 
 /* media queries */
 
-/* 700px */
+/* 800px */
 @media(max-width: 800px) {
+    /* banniere */
+    .banniere h1{
+        font-size: 35px;
+    }
+
+    .banniere p{
+        font-size: 16px;
+    }
+
+    main .contentContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* main */
     .leftCont{
         margin-bottom: 40px;
+        width: 100%;
     }
+
+    .formulaire{
+        width: 100%;
+    }
+
+    
 
     .formulaire .put{
         display: block !important;
@@ -310,7 +336,10 @@ footer {
 
 /* 700px and 1100px */
 
-@media only screen and (min-width: 700px) and (max-width:930px) {
+@media only screen and (min-width: 801px) and (max-width: 1250px) {
+    main .formulaire{
+        margin-top: 60px;
+    }
     main .contentContact .content{
         display: block !important;
     }
@@ -342,3 +371,6 @@ footer {
         padding-right: 0 !important;
     }
 }
+
+
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {}

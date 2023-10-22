@@ -3,6 +3,24 @@
     padding: 0;
 }
 
+.radiusButton a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.radiusButton:hover{
+  position: relative;
+  bottom: 10px;
+  transition: 3s ease;
+}
+
+.radiusButton:hover a{
+  color: black;
+  transition: 1s ease;
+}
+
 #banner{
     background: linear-gradient(0deg, #0000008f, #0000008f), url("../../a-propos/image_a-propos/bcg_propos.png");
     height: 80vh;
@@ -22,6 +40,45 @@
 /* main */
 
 /* Styles for wrapping the search box */
+
+
+/* section bannière */
+.banniere {
+  background-image: url(../../../public/images/banniere-technologie-orange.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+  margin-top: 135px;
+}
+
+.banniereContent h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.banniereContent p {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.banniere a {
+  text-decoration: none;
+}
+
+.banniereContent .linkAccueil a {
+  color: white !important;
+}
+
+.banniereContent .linkPage a {
+  color: var(--orange);
+}
+
+/* section bannière */
+
 
 .d-flex .btn{
   border-radius: 0 20px;

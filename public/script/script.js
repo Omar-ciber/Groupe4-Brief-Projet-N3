@@ -1,11 +1,14 @@
 // Sweet alert
 var formulaire = document.querySelector('form');
-console.log(formulaire);
+// console.log(formulaire);
 
 const email = document.getElementById("email");
-console.log(email);
+// console.log(email);
 
-formulaire.addEventListener('submit', (e) => {
+var btnFooter = document.getElementById('btnFooter');
+// console.log(btnFooter);
+
+btnFooter.addEventListener('click', (e) => {
     e.preventDefault();
 
     let regexEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;

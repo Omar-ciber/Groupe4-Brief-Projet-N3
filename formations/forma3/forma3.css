@@ -82,7 +82,17 @@
     padding: 0 auto;
     overflow: scroll; 
  }
+ul{
+    padding: 0 !important;
+    
+}
 
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+}
 .vd-ifra .desc{
     font-size: 12px !important;
 

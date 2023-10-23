@@ -28,6 +28,9 @@
     width: 25% !important;
     
 }
+.btn{
+    background-color: var(--orange) !important;
+}
 
 
 .has-search .form-control-feedback {

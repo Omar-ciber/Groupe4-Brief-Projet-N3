@@ -33,7 +33,7 @@ nav a {
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 3%;
-    margin-top: 105px;
+    margin-top: 0;
 }
 
 .banniereContent h1 {
@@ -192,10 +192,6 @@ footer {
 
 /* 700px */
 @media(max-width: 800px) {
-    .banniere{
-        margin-top: 50px;
-    }
-
     .banniereContent h1{
         font-size: 16px;
     }
@@ -276,9 +272,6 @@ footer {
 /* 700px and 1100px */
 
 @media only screen and (min-width: 700px) and (max-width:930px) {
-    .banniere{
-        margin-top: 50px;
-    }
     .banniereContent h1{
         font-size: 25px;
     }

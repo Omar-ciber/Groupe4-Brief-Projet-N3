@@ -1,4 +1,5 @@
 ul{
+
     padding: 0 !important;
 }
 
@@ -8,6 +9,17 @@ li{
 
 a{
     text-decoration: none !important;
+
+    padding: 0;
+}
+
+ul li{
+  list-style-type: none;  
+}
+
+li a{
+    text-decoration: none;
+
 }
 #banner {
     background: linear-gradient(0deg, #0000008f, #0000008f), url("../public/images/banniere-technologie-orange.jpg");
@@ -35,7 +47,7 @@ a{
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 3%;
-    margin-top: 105px;
+    margin-top: 0;
 }
 
 .banniereContent h1 {
@@ -57,6 +69,7 @@ a{
 
 .banniereContent .linkPage a {
     color: var(--orange);
+    text-decoration: none;
 }
 
 .collapse a {

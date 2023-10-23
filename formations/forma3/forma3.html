@@ -142,131 +142,151 @@
             </div>
         </div>
 
-        
+   
         <div class="row m-auto py-5">
-            <div class="play-dvd col-md-8">
-                <div class="video-player mb-4 shadow-sm">
-                    <iframe width="840" height="515" src="https://www.youtube.com/embed/b6thG9lq2C0?si=63_MiPtA908YNh9o&amp;start=1" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="details-video d-flex justify-content-between">
-                      <div class="logo">
-                        <img src="../../public/images/logo.png" alt="">
-                        <span class="fw-bold">Daaray Technologie</span>
-                      </div>
-                      <div class="icones d-flex justify-content-between">
-                        <!-- <div class="star me-1">
-                            <i class="bi bi-star" style="color: #E94D1A;"></i>
-                            <i class="bi bi-star" style="color: #E94D1A;"></i>
-                            <i class="bi bi-star" style="color: #E94D1A;"></i>
-                            <i class="bi bi-star" style="color: #E94D1A;"></i>
-                            <i class="bi bi-star" style="color: #E94D1A;"></i>
-                        </div> -->
-                       <div class="like me-5">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
-                       </div>
-                      </div>
-                </div>
-                <div class="video-comments border-box">
-                <div class="boutons-popup d-flex justify-content-between">
-                    <button type="button" class="btn btn-outline-dark my-4 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Commenter</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content" style="color: #E94D1A;">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nouveau commentaire</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="mb-3">
-                                <label for="message-text" class="col-form-label fw-bold">Commentaire</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
+          <div class="play-dvd col-md-8">
+              <div class="video-player mb-4 shadow-sm" id="videoPlayer">
+
+              </div>
+              <div class="details-video d-flex justify-content-between">
+                    <div class="logo">
+                      <img src="../../public/images/logo.png" alt="">
+                      <span class="fw-bold">Daaray Technologie</span>
+                    </div>
+                    <div class="icones d-flex justify-content-between">
+                      <!-- <div class="star me-1">
+                          <i class="bi bi-star" style="color: #E94D1A;"></i>
+                          <i class="bi bi-star" style="color: #E94D1A;"></i>
+                          <i class="bi bi-star" style="color: #E94D1A;"></i>
+                          <i class="bi bi-star" style="color: #E94D1A;"></i>
+                          <i class="bi bi-star" style="color: #E94D1A;"></i>
+                      </div> -->
+                     <div class="like me-5">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
+                     </div>
+                    </div>
+              </div>
+              <div class="video-comments border-box">
+              <div class="boutons-popup d-flex justify-content-between">
+                  <button type="button" class="btn btn-outline-dark my-4 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Commenter</button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content" style="color: #E94D1A;">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Nouveau commentaire</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="form-comment">
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label fw-bold">Commentaire</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-outline-dark">Send message</button>
-                          </div>
+                            <button type="submit" class="btn btn-outline-dark">Send message</button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                         
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                   <!-- Button trigger modal -->
-                    <button type="buttonclasscom" class="btn btn-outline-dark me-5 mt-4" style="height: 40px !important;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                       Voir plus...
-                    </button> 
-  
-                   <!-- Modal -->
-                   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                     <div class="modal-dialog">
-                         <div class="modal-content">
-                            <div class="modal-header">
-                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                                    <!-- <div class="title d-flex justify-content-center mt-5">
-                                        <div class="d-flex">
-                                            <div id="circle">
-                                                <i class="fa-regular fa-circle orange"></i>
-                                            </div>
-                                            <div>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                            </div>
-                                        </div>
-                                       <h5 class="mx-4">Notes de la formation</h5>
-                                       <div class="d-flex">
-                                            <div>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                            </div>
-                                           <div id="circle">
-                                               <i class="fa-regular fa-circle orange"></i>
-                                           </div>
-                                    </div>
-                                    </div> -->
-                                    <div class="fnotes">
-                                      <div class="title d-flex justify-content-center mt-5">
-                                        <div class="d-flex">
-                                            <div id="circle">
-                                                <i class="fa-regular fa-circle orange"></i>
-                                            </div>
-                                            <div>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                            </div>
-                                        </div>
-                                       <h5 class="mx-4">Notez la formation</h5>
-                                       <div class="d-flex">
-                                            <div>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                                <i class="bi bi-dash"></i>
-                                            </div>
-                                           <div id="circle">
-                                               <i class="fa-regular fa-circle orange"></i>
-                                           </div>
-                                    </div>
-                                    </div>                                      
-                                      <div class="rating-star d-flex justify-content-center" style="color: #E94D1A;" id="rating-star">
-                                        <i class="bi bi-star" id="star" onclick="starPosition(1)"></i>
-                                        <i class="bi bi-star" id="star" onclick="starPosition(2)"></i>
-                                        <i class="bi bi-star" id="star" onclick="starPosition(3)"></i>
-                                        <i class="bi bi-star" id="star" onclick="starPosition(4)"></i>
-                                        <i class="bi bi-star" id="star" onclick="starPosition(5)"></i>
+                 <!-- Button trigger modal -->
+                  <button type="buttonclasscom" class="btn btn-outline-dark me-5 mt-4" style="height: 40px !important;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                     Voir plus...
+                  </button> 
+
+                 <!-- Modal -->
+                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                       <div class="modal-content">
+                          <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                  <!-- <div class="title d-flex justify-content-center mt-5">
+                                      <div class="d-flex">
+                                          <div id="circle">
+                                              <i class="fa-regular fa-circle orange"></i>
+                                          </div>
+                                          <div>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                          </div>
                                       </div>
-                                  </h1>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                             </div>
-                     <div class="modal-body">
-                         
-                        <ul class="comments-list">
-                            <li class="comment">
+                                     <h5 class="mx-4">Notes de la formation</h5>
+                                     <div class="d-flex">
+                                          <div>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                          </div>
+                                         <div id="circle">
+                                             <i class="fa-regular fa-circle orange"></i>
+                                         </div>
+                                  </div>
+                                  </div> -->
+                                  <div class="fnotes">
+                                    <div class="title d-flex justify-content-center mt-5">
+                                      <div class="d-flex">
+                                          <div id="circle">
+                                              <i class="fa-regular fa-circle orange"></i>
+                                          </div>
+                                          <div>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                          </div>
+                                      </div>
+                                     <h5 class="mx-4">Notez la formation</h5>
+                                     <div class="d-flex">
+                                          <div>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                              <i class="bi bi-dash"></i>
+                                          </div>
+                                         <div id="circle">
+                                             <i class="fa-regular fa-circle orange"></i>
+                                         </div>
+                                  </div>
+                                  </div>                                      
+                                    <div class="rating-star d-flex justify-content-center" style="color: #E94D1A;" id="rating-star">
+                                      <i class="bi bi-star" id="star" onclick="starPosition(1)"></i>
+                                      <i class="bi bi-star" id="star" onclick="starPosition(2)"></i>
+                                      <i class="bi bi-star" id="star" onclick="starPosition(3)"></i>
+                                      <i class="bi bi-star" id="star" onclick="starPosition(4)"></i>
+                                      <i class="bi bi-star" id="star" onclick="starPosition(5)"></i>
+                                    </div>
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                   <div class="modal-body">
+                       
+                      <ul class="comments-list">
+                          <li class="comment">
+                            <div class="detailComent d-flex">
+                                <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
+                                <div class="textComent">
+                                  <span class="fw-bold">YAMA BALDE</span>
+                                  <p>Facile à comprendre.Merci beaucoup</p>
+                                  <div class="star me-1">
+                                      <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
+                                      <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
+                                      <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
+                                      <i class="bi bi-star" style="color: #E94D1A;"></i>
+                                      <i class="bi bi-star" style="color: #E94D1A;"></i>
+                                  </div>
+                              </div>    
+                            </div>
+                            <hr>
+                            <div class="commenter mb-3">
+                            Il y'a deux jours...
+                            </div>
+                          </li>
+                          <li class="comment">
                               <div class="detailComent d-flex">
                                   <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
                                   <div class="textComent">
@@ -276,119 +296,64 @@
                                         <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
                                         <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
                                         <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
-                                        <i class="bi bi-star" style="color: #E94D1A;"></i>
+                                        <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
                                         <i class="bi bi-star" style="color: #E94D1A;"></i>
                                     </div>
                                 </div>    
                               </div>
                               <hr>
                               <div class="commenter mb-3">
-                              Il y'a deux jours...
+                              Il y'a 3h...
                               </div>
                             </li>
-                            <li class="comment">
-                                <div class="detailComent d-flex">
-                                    <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
-                                    <div class="textComent">
-                                      <span class="fw-bold">YAMA BALDE</span>
-                                      <p>Facile à comprendre.Merci beaucoup</p>
-                                      <div class="star me-1">
-                                          <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
-                                          <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
-                                          <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
-                                          <i class="bi bi-star-fill" style="color: #E94D1A;"></i>
-                                          <i class="bi bi-star" style="color: #E94D1A;"></i>
-                                      </div>
-                                  </div>    
-                                </div>
-                                <hr>
-                                <div class="commenter mb-3">
-                                Il y'a 3h...
-                                </div>
-                              </li>
-                          </ul>
-                     </div>
-                     <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-outline-dark">Envoyer</button>
-                     </div>
+                        </ul>
+                   </div>
+                   <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-dark">Envoyer</button>
                    </div>
                  </div>
-                </div>
-            </div>
+               </div>
+              </div>
+          </div>
+                  
+               <ul class="comments-list mt-5" id="commentList">
                     
-                    <ul class="comments-list mt-5">
-                      <li class="comment">
-                        <div class="detailComent d-flex bg-secondary-subtle p-2">
-                            <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
-                            <div class="textComent d-flex">
-                              <div class="text-left"><p>Facile à comprendre.Merci beaucoup</p></div>
-                              <div class="text-right d-flex">
-                                <div class="like ms-5 ps-5">
-                                  <i class="fa-regular fa-thumbs-up"></i>
-                                  <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
-                                </div>
-                                <p class="fw-bold ms-5 ps-5">Repondre</p>
-                              </div>
-                            </div>   
-                        </div>
-                        <hr>
-                        <div class="commenter mb-3">
-                        Il y'a deux jours...
-                        </div>
-                      </li>
-                      <li class="comment">
-                        <div class="detailComent d-flex bg-secondary-subtle p-2">
-                            <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
-                            <div class="textComent d-flex">
-                              <div class="text-left"><p>Facile à comprendre.Merci beaucoup</p></div>
-                              <div class="text-right d-flex">
-                                <div class="like ms-5 ps-5">
-                                  <i class="fa-regular fa-thumbs-up"></i>
-                                  <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
-                                </div>
-                                <p class="fw-bold ms-5 ps-5">Repondre</p>
-                              </div>
-                            </div>    
-                        </div>
-                        <hr>
-                        <div class="commenter mb-3">
-                        Il y'a 3h...
-                        </div>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <div class="title d-flex justify-content-center mt-5">
-                <div class="d-flex">
-                    <div id="circle">
-                        <i class="fa-regular fa-circle orange"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-dash"></i>
-                        <i class="bi bi-dash"></i>
-                        <i class="bi bi-dash"></i>
-                    </div>
-                </div>
-               <h5 class="mx-4">Nos Cours</h5>
-               <div class="d-flex">
-                    <div>
-                        <i class="bi bi-dash"></i>
-                        <i class="bi bi-dash"></i>
-                        <i class="bi bi-dash"></i>
-                    </div>
-                   <div id="circle">
-                       <i class="fa-regular fa-circle orange"></i>
-                   </div>
-            </div>
-            </div>
-         -->
-            <div class="sidebar-dvd col-md-4" id="playlist">
-                <!-- les vidéos seront affichés ici -->
-            </div>
+              </ul>
+              </div>
+          </div>
+          <!-- <div class="title d-flex justify-content-center mt-5">
+              <div class="d-flex">
+                  <div id="circle">
+                      <i class="fa-regular fa-circle orange"></i>
+                  </div>
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+              </div>
+             <h5 class="mx-4">Nos Cours</h5>
+             <div class="d-flex">
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+                 <div id="circle">
+                     <i class="fa-regular fa-circle orange"></i>
+                 </div>
+          </div>
+          </div>
+       -->
+          <div class="sidebar-dvd col-md-4" id="playlist">
+              <!-- les vidéos seront affichés ici -->
+          </div>
 
-         
-        </div>
+       
+      </div>
+      
+                   
         
                      
                    

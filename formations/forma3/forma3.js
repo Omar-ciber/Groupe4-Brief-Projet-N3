@@ -1,125 +1,177 @@
-    var formations = [
-        {
-        id: 0, 
-        title: "Cours complet Html",
-        video: "https://www.youtube.com/embed/KzXUH1LKqsc?si=iNtfevNgQInENcXs&amp;start=1",
-        description: "Video2: C'est quoi HTML CSS",
-        content: "Daaray Technologie",
-
-    },
+const formations = [
     {
         id: 1, 
-        title: "Cours complet Html",
-        video: "https://www.youtube.com/embed/0VRwVvgc3VE?si=O6OTjs53CXPc2rP3&amp;start=1",
-        description: "Video3: Structure d'une Balise HTML",
-        content: "Daaray Technologie ",
-
+        title: "Cours complet Html 1",
+        video: "https://www.youtube.com/embed/0VRwVvgc3VE",
+        description: "Structure d'une Balise HTML",
+        content: "Daaray Technologie",
     },
     {
-        id: 2, 
-        title: "Cours complet Html",
-        video: "https://www.youtube.com/embed/P5biY6vWN4k?si=eZtztD8pd-JlitIW&amp;start=1",
-        description: "Video4: Telecharger VsCode",
-        content: "Daaray Technologie",
+    id: 2, 
+    title: "Cours complet Html 2",
+    video: "https://www.youtube.com/embed/KzXUH1LKqsc",
+    description: "C'est quoi HTML CSS",
+    content: "Daaray Technologie",
 
     },
     {
         id: 3, 
-        title: "Cours complet Html",
-        video: "https://www.youtube.com/embed/0619cztrXz0?si=34eMTaqhgt5ATFZc&amp;start=1",
-        description: "Video5: Structure d'une page HTML",
-        content: "Daaray Technologie",
+        title: "Cours complet Html 3",
+        video: "https://www.youtube.com/embed/0VRwVvgc3VE",
+        description: "Structure d'une Balise HTML",
+        content: "Daaray Technologie ",
+
     },
     {
         id: 4, 
-        title: "Cours complet Html",
-        video: "https://www.youtube.com/embed/-QPyH5l5rRQ?si=Bmo3edVsfvS3CsFe&amp;start=1",
-        description: "Video6: Les balises h1 à h6,br et pre",
+        title: "Cours complet Html 4",
+        video: "https://www.youtube.com/embed/P5biY6vWN4k",
+        description: "Telecharger VsCode",
+        content: "Daaray Technologie",
+
+    },
+    {
+        id: 5, 
+        title: "Cours complet Html 5",
+        video: "https://www.youtube.com/embed/0619cztrXz0",
+        description: "Structure d'une page HTML",
         content: "Daaray Technologie",
     },
     {
-        id: 4, 
-        title: "Cours complet Html",
-        video: "https://www.youtube.com/embed/S3jCnAGwWqk?si=nSDGyGOMWTelwDcE",
-        description: "Video6: Les balises pour marquer l'importance  d'un texte",
+        id: 6, 
+        title: "Cours complet Html 6",
+        video: "https://www.youtube.com/embed/-QPyH5l5rRQ",
+        description: "Les balises h1 à h6,br et pre",
+        content: "Daaray Technologie",
+    },
+    {
+        id: 7, 
+        title: "Cours complet Html 7",
+        video: "https://www.youtube.com/embed/S3jCnAGwWqk",
+        description: "Les balises pour marquer l'importance  d'un texte",
         content: "Daaray Technologie",
     }
-     ]  
+] 
 
- function generateformationscard()
-{
-    var formationCards= document.getElementById("playlist");
+const commentList = [
+    {
+        text: 'Facile à comprendre.Merci beaucoup',
+        date: 'Aujourd\hui'
+    },
+    {
+        text: 'Mauvais site',
+        date: 'Il y\a 2h'
+    }
+]
 
-    formations.forEach(function(formation){
-      var formationcard =document.createElement('div');
-      formationcard.className='d-flex justify-content-between';
-      formationcard.innerHTML=`
-            <button class="vd-ifra mb-4">
-                <iframe width="200" height="100" src="${formation.video}" class="iframe"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </button>
-            <div class="desc">
-                <span class="fw-bold">${formation.title}</span>
-                <p class="">${formation.description}</p>
-                <span class="fw-bold">Daaray Technologie</span>
-                <p>${formation.content}</p>
-            </div>
-      `;
+
+window.onload = function() {
+    const videoPlayer = document.getElementById('videoPlayer');
+    const formationCards = document.getElementById("playlist");
+
+    function loadVideo(formation) {
+        videoPlayer.innerHTML = `<iframe width="800" height="415" src="${formation.video}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>`;
+    }
+
+    loadVideo(formations[0]);
+
+    formations.forEach(formation => {
+        const formationCard = document.createElement('div');
+        formationCard.className='d-flex justify-content-between';
+        formationCard.innerHTML=`
+              <div class="vd-ifra mb-4">
+                 <img src="https://i.ytimg.com/vi/P5biY6vWN4k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBykMukxtjWXC3E8YNxGjXyyj8egg">
+              </div
+              <div class="desc d-flex justify-content-center">
+                  <div class="><span class="fw-bold">${formation.title}</span></div>
+                  <div class="><p class="">${formation.description}</p></div>
+                  <div><span class="fw-bold">Daaray Technologie</span></div>
+                  <div><p>${formation.content}</p></div>
+              </div>
+        `;
       
-       formationCards.appendChild(formationcard);
-       });
+        formationCard.addEventListener('click', () => {
 
-}
+            loadVideo(formation);
+          
+        });
+        
+        formationCards.appendChild(formationCard);
 
+    });
 
-window.addEventListener('load', generateformationscard);
+    const comments = document.getElementById('commentList');
 
+    commentList.forEach(comment => {
+        const commentEl = document.createElement('li');
+        commentEl.className = 'comment'
+        commentEl.innerHTML = `
+        <div class="detailComent d-flex bg-secondary-subtle p-2">
+            <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
+            <div class="textComent d-flex">
+              <div class="text-left">
+                <p id="commentText">
+                  ${comment.text}
+                </p>
+            </div>
+              <div class="text-right d-flex">
+                <div class="like ms-5 ps-5">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
+                </div>
+                <p class="fw-bold ms-5 ps-5">Repondre</p>
+              </div>
+            </div>   
+        </div>
+        
+        <hr>
+        <div class="commenter mb-3" id="commentDate">
+           ${comment.date}
+        </div>
+        `
+        comments.appendChild(commentEl);
+       
+    });
 
-// const iframe=document.getElementsByClassName("vd-ifra");
-// console.log(iframe);
-// function loadVideo(){
-//    console.log("bonjour");
-// }
+    const formComment = document.getElementById('form-comment');
 
-// iframe.addEventListener("click",(event)=>{
-//     console.log("bonjour");
-// });
+    formComment.addEventListener('submit', (event) => {
+        event.preventDefault();
 
+        const message = document.getElementById('message-text').value;
+        console.info('message: ', message);
+        commentList.push({text: message, date: Date.now()});
 
+        console.info('comments' , commentList);
 
-
-
-
-
-
-
-
-///notes...
-// let rating_star = document.getElementById("rating-star");
-let stars = document.querySelectorAll("#star");
-
-function starPosition(id) {
-  let note={
+        const newComment = document.createElement('li');
+        newComment.className = 'comment'
+        newComment.innerHTML = `
+        
+        <div class="detailComent d-flex bg-secondary-subtle p-2">
+        <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
+        <div class="textComent d-flex">
+          <div class="text-left">
+            <p id="commentText">
+              ${message}
+            </p>
+        </div>
+          <div class="text-right d-flex">
+            <div class="like ms-5 ps-5">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
+            </div>
+            <p class="fw-bold ms-5 ps-5">Repondre</p>
+          </div>
+        </div>   
+    </div>
     
-  }
-  stars.forEach((star) => {
-    star.setAttribute("class", "bi bi-star");
-  });
-  // alert('etoile '+id+" cliquée");
-  for (let i = 0; i < id; i++) {
-    stars[i].setAttribute("class", "bi bi-star-fill");
-  }
-
-}
-
-
-
-//commentaires
-
-
-
-
-
-
-
+    <hr>
+    <div class="commenter mb-3" id="commentDate">
+       ${new Date()}
+    </div>
+        
+        `
+        comments.appendChild(newComment);
+    })
+};

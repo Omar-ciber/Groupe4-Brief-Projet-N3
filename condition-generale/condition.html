@@ -12,7 +12,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="condition.css">
     <link rel="stylesheet" href="../public/style/style.css">
-    <link rel="stylesheet" href="../public/nav.css">
+    <link rel="stylesheet" href="../public/style/header.css">
     <title>Condition General</title>
 </head>
 
@@ -32,58 +32,69 @@
         </a>
     </div>
     <!-- icones -->
-
-    <header>
-        <nav class="navigation  bg-white fixed-top shadow">
-            <a href="../accueil/accueil.html"><img src="../public/images/logo2.png" alt="" class="logoNav"></a>
-        
-            <div class="menu">
-                <ul class="first">
-                    <li><a href="../accueil/accueil.html">Accueil</a></li>
-                    <li><a href="../a-propos/a-propos.html">A propos</a></li>
-                    <li><a href="../services/services.html">Services</a></li>
-                    <li><a href="../formations/accueilforma/accueilforma.html">Formations</a></li>
-                    <li><a href="../articles/articles.html">Articles</a></li>
-                    <li><a href="../temoignage/temoignage.html">Témoignages</a></li>
-                </ul>
-            </div>
-        
-            <div class="dropMenu dropMenuLeft" id="dropMenu">
-                <div class="menuDrop">
-                    <i class="fa-solid fa-circle-xmark" id="close"></i>
-        
-                    <ul>
-                        <li><a href="../accueil/accueil.html">Accueil</a></li>
-                        <li><a href="../a-propos/a-propos.html">A propos</a></li>
-                        <li><a href="../services/services.html">Services</a></li>
-                        <li><a href="../formations/accueilforma/accueilforma.html">Formations</a></li>
-                        <li><a href="../articles/articles.html">Articles</a></li>
-                        <li><a href="../temoignage/temoignage.html">Témoignages</a></li>
+    
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-white shadow sticky-top top-0">
+        <div class="container">
+            <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo"
+                    alt=""></a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black fw-bold" aria-current="page"
+                                href="../accueil/accueil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../formations/accueilforma/accueilforma.html"
+                                class="nav-link text-black fw-bold">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
+                        </li>
                     </ul>
-        
-                    <button class="btn btnDrop"><a href="../contact/contact.html">Nous contacter</a></button>
+                    <div id="contact-us">
+                        <a href="../contact/contact.html" class="text-decoration-none "><button
+                                class="btn bgOrange text-white p-2">Nous
+                                contacter</button></a>
+                    </div>
                 </div>
             </div>
-        
-            <span><i class="fa-solid fa-bars burger" id="burger"></i></span>
-        
-            <button class="btn btnNav"><a href="../contact/contact.html">Nous contacter</a></button>
-        </nav>
-    </header>
-    <!-- main -->
+        </div>
+    </nav>
+    <!-- header -->
+    
+    <!-- Bannière -->
+    <section class="banniere">
+        <div class="banniereContent text-center mt-5 mb-5">
+            <h1>condition générale</h1>
+            <p>
+                <span class="linkAccueil"><a href="../accueil/accueil.html">Accueil</a></span>
+                /
+                <span class="linkPage"><a href="../services/services.html">condition générale</a></span>
+            </p>
+        </div>
+    </section>
+    <!-- Bannière -->
     <main>
-        <!-- Bannière -->
-        <section class="banniere">
-            <div class="banniereContent text-center mt-5 mb-5">
-                <h1>Condition General</h1>
-                <p>
-                    <span class="linkAccueil"><a href="../accueil/accueil.html">Accueil</a></span>
-                    /
-                    <span class="linkPage"><a href="../contact/contact.html">Condition General</a></span>
-                </p>
-            </div>
-        </section>
-        <!-- Bannière -->
 
         <div class=" mx-5 mt-5">
             <h5 class="">
@@ -159,7 +170,7 @@
             <div class="col-12 col-md-8 contentFooter">
                 <form class="border form d-flex footerIpt">
                     <input type="email" class="form-control" id="email" placeholder="Votre addresse email...">
-                    <button class="btn">S'incrire maintenant!</button>
+                    <button class="btn" id="btnFooter">S'incrire maintenant!</button>
                 </form>
                 <div class="row pagesFooter">
                     <div class="col-12 col-md-6">

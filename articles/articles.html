@@ -22,8 +22,7 @@
         <a href="#" class="text-decoration-none text-white bgOrange p-2 mb-3 d-block shadow">djibysec8@gmail.com &nbsp;&nbsp;<i class="fa-regular fa-envelope "></i></a>
         <a href="#" class="text-decoration-none text-black bg-white p-2 mb-3 d-block shadow">Daray Techologie &nbsp;&nbsp;<i class="fa-brands fa-youtube orange"></i></a>
     </div>
-    <header class="sticky-top top-0">
-      <nav class="navbar navbar-expand-lg bg-white shadow">
+      <nav class="navbar navbar-expand-lg bg-white shadow sticky-top top-0">
           <div class="container">
             <a class="navbar-brand" href="../accueil/accueil.html"><img src="../public/images/logo.png" id="logo" alt=""></a>
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -62,61 +61,15 @@
             </div>
           </div>
         </nav>
-  </header>
+        <section id="banner">
+          <div class="pt-5 banner-texte">
+              <h1 class="my-5 text-center">
+                 Articles
+              </h1>
+             
+          </div>
+      </section>
     <main>
-        <section id="la-une">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 article1">
-                        <div class="d-flex justify-content-center mt-5 ms-5">
-                            <div>
-                                <h4>Angular</h4>
-                                <p class="p-1 border-start border-2 ms-1">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae   dolorum tempora 
-                                    ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
-                                </p>
-                                <div>
-                                    <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="first">Voir plus</button>
-                                </div>
-                              
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="container p-0" id="une2">
-                            <div class="article2 text-white">
-                                <div class="d-flex justify-content-center ">
-                                    <div class="mt-2 ms-5">
-                                        <h5>Angular</h5>
-                                        <p class="border-start border-2 w-75 ms-1 p-1">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae  dolorum tempora 
-                                            ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
-                                        </p>
-                                        <div>
-                                          <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="second">Voir plus</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article3 mt-2 text-white">
-                                <div class="d-flex justify-content-center ">
-                                    <div class="mt-2 ms-5">
-                                        <h5>Angular</h5>
-                                        <p class="p-1 border-start border-2 w-75 ms-1">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora 
-                                            ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
-                                        </p>
-                                        <div>
-                                          <button class="btn  border border-2 border-white radiusButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="third">Voir plus</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="mt-4">
             <div class="title d-flex justify-content-center">
                 <div class="d-flex">
@@ -333,7 +286,52 @@
       </div>
     </div>
     
-   
+  
+    <!-- footer -->
+    <footer>
+      <div class="footerContent mx-md-5 row">
+        <div class="col-12 col-md-4 logoFooter border">
+          <img src="../public/images/logo.png" alt="">
+        </div>
+        <div class="col-12 col-md-8 contentFooter">
+          <form class="border form d-flex footerIpt">
+            <input type="email" class="form-control" id="email" placeholder="Votre addresse email...">
+            <button class="btn" id="btnFooter">S'incrire maintenant!</button>
+          </form>
+          <div class="row pagesFooter">
+            <div class="col-12 col-md-6">
+              <h6>Support</h6>
+              <ul>
+                <li><a href="../confidentialité/confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="../cookies/cookies.html">Politique d'utilisation des cookies</a></li>
+                <li><a href="../condition-generale/condition.html">Condition générale</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <h6>A propos</h6>
+              <ul>
+                <li><a href="../a-propos/a-propos.html">A propos</a></li>
+                <li><a href="../a-propos/a-propos.html">Team</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="traitFooter"></div>
+          <div class="copyrightFooter d-flex justify-content-between">
+            <div class="leftCopy">
+              <p>Design by Groupe4, 2023</p>
+            </div>
+            <div class="rightCopy">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

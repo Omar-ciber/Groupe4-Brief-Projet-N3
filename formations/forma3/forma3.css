@@ -29,6 +29,7 @@
     
 }
 
+
 .has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
@@ -82,8 +83,9 @@
     overflow: scroll; 
  }
 
-.desc{
+.vd-ifra .desc{
     font-size: 12px !important;
+
 }
  .persComent img{
     border-radius: 50%;

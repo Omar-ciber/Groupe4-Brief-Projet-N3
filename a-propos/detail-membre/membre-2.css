@@ -10,6 +10,17 @@
     margin-top: 100px;
 
 }
+ul {
+    padding: 0 !important;
+}
+
+li {
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
 
 .containerDM {
     /* background-color: var(--gris); */

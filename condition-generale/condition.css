@@ -1,4 +1,15 @@
 ul{
+
+    padding: 0 !important;
+}
+
+li{
+    list-style-type: none !important;
+}
+
+a{
+    text-decoration: none !important;
+
     padding: 0;
 }
 
@@ -8,6 +19,7 @@ ul li{
 
 li a{
     text-decoration: none;
+
 }
 #banner {
     background: linear-gradient(0deg, #0000008f, #0000008f), url("../public/images/banniere-technologie-orange.jpg");
@@ -268,6 +280,7 @@ footer {
         padding-right: 0 !important;
     }
 }
+
 /* .Baniers{
     justify-content: center;
     margin-top: 20px;

@@ -107,9 +107,17 @@ li a{
     pointer-events: none;
     color: #aaa;
 }
-
-
-
+.card-content{
+  border: 1px solid green;
+}
+@media (max-width: 768px) {
+   .card-content{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    
+}
 
 [data-pagination] {
   font-size: 8pt;

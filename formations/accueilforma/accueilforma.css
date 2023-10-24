@@ -8,10 +8,10 @@
     background-image: url(../../public/images/banniere-technologie-orange.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-bottom: 5%;
     margin-bottom: 3%;
-    margin-top: 110px;
+    margin-top: 0;
 }
 
 .banniereContent h1 {
@@ -28,6 +28,10 @@
 
 .banniere a {
     text-decoration: none;
+}
+
+nav .active{
+    color: var(--orange) !important;
 }
 
 .banniereContent .linkAccueil a {

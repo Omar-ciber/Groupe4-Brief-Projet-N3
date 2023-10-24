@@ -1,54 +1,54 @@
 const formations = [
     {
         id: 1, 
-        title: "Cours complet Html 1",
+        title: "Cours complet Html - Vidéo 1",
         video: "https://www.youtube.com/embed/0VRwVvgc3VE",
-        description: "Structure d'une Balise HTML",
+        description: "Vidéo 1: Structure d'une Balise HTML/Explication",
         content: "Daaray Technologie",
     },
     {
     id: 2, 
-    title: "Cours complet Html 2",
+    title: "Cours complet Html - Vidéo 2",
     video: "https://www.youtube.com/embed/KzXUH1LKqsc",
-    description: "C'est quoi HTML CSS",
+    description: "Vidéo 2:C'est quoi HTML/CSS-Explication détaillée",
     content: "Daaray Technologie",
 
     },
     {
         id: 3, 
-        title: "Cours complet Html 3",
+        title: "Cours complet Html - Vidéo 3",
         video: "https://www.youtube.com/embed/0VRwVvgc3VE",
-        description: "Structure d'une Balise HTML",
+        description: "Vidéo 3: Structure d'une Balise HTML/Explication",
         content: "Daaray Technologie ",
 
     },
     {
         id: 4, 
-        title: "Cours complet Html 4",
+        title: "Cours complet Html - Vidéo 4",
         video: "https://www.youtube.com/embed/P5biY6vWN4k",
-        description: "Telecharger VsCode",
+        description: "Vidéo 4: Telecharger VsCode/Explication détaillée",
         content: "Daaray Technologie",
 
     },
     {
         id: 5, 
-        title: "Cours complet Html 5",
+        title: "Cours complet Html - Vidéo 5",
         video: "https://www.youtube.com/embed/0619cztrXz0",
-        description: "Structure d'une page HTML",
+        description: "Vidéo 5:Structure d'une page HTML / Explication",
         content: "Daaray Technologie",
     },
     {
         id: 6, 
-        title: "Cours complet Html 6",
+        title: "Cours complet Html - Vidéo 6",
         video: "https://www.youtube.com/embed/-QPyH5l5rRQ",
-        description: "Les balises h1 à h6,br et pre",
+        description: ":Les balises de h1 à h6 ,la balise br et la balise pre",
         content: "Daaray Technologie",
     },
     {
         id: 7, 
-        title: "Cours complet Html 7",
+        title: "Cours complet Html - Vidéo 7",
         video: "https://www.youtube.com/embed/S3jCnAGwWqk",
-        description: "Les balises pour marquer l'importance  d'un texte",
+        description: ":Les balises pour marquer l'importance  d'un texte",
         content: "Daaray Technologie",
     }
 ] 
@@ -59,7 +59,7 @@ const commentList = [
         date: 'Aujourd\hui'
     },
     {
-        text: 'Mauvais site',
+        text: 'Contenu trés interessant',
         date: 'Il y\a 2h'
     }
 ]
@@ -70,7 +70,7 @@ window.onload = function() {
     const formationCards = document.getElementById("playlist");
 
     function loadVideo(formation) {
-        videoPlayer.innerHTML = `<iframe width="800" height="415" src="${formation.video}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>`;
+        videoPlayer.innerHTML = `<iframe width="835" height="415" src="${formation.video}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>`;
     }
 
     loadVideo(formations[0]);
@@ -82,6 +82,13 @@ window.onload = function() {
               <div class="vd-ifra mb-4">
                  <img src="https://i.ytimg.com/vi/P5biY6vWN4k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBykMukxtjWXC3E8YNxGjXyyj8egg">
               </div
+              
+              <div class="desc">
+                 <div class="details-playlist mt-2">
+                      <span class="fw-bold">${formation.title}</span>
+                      <p class="fw-bold">${formation.description}</p>
+                      <p>${formation.content}</p>
+                 </div>
               <div class="desc fs-6">
                   <div class="><span class="fw-bold">${formation.title}</span></div>
                   <div class="><p class="">${formation.description}</p></div>
@@ -175,3 +182,5 @@ window.onload = function() {
         comments.appendChild(newComment);
     })
 };
+
+

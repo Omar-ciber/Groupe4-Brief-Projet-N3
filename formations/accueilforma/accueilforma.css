@@ -58,6 +58,14 @@
 #banner .banner-texte{
     margin-left: 80px !important;
 }
+/* @media screen and(max-width: 768px){
+    .imagefirst{
+        width: 100%;
+    }
+    .card-left img{
+        width: 200px !important;
+    }
+} */
 
 
 

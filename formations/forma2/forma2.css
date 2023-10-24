@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.active {
+  color: var(--orange) !important;
+}
+
 /* section bannière */
 .banniere {
   background-image: url(../../public/images/banniere-technologie-orange.jpg);
@@ -11,7 +15,7 @@
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 3%;
-  margin-top: 110px;
+  margin-top: 0;
 }
 
 .banniereContent h1 {
@@ -61,7 +65,7 @@ li a{
     width: 100%;
     background-position: center;
     color: white;
-    margin-top: 100px;
+    margin-top: 0;
 
 }
 #banner .banner-texte{
@@ -80,9 +84,6 @@ li a{
     height: 220px !important;
     /* width: 70%; */
     border-radius: 0 0 0 100px;
-}
-.card-body{
-  
 }
 
 

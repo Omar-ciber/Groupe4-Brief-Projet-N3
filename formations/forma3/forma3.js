@@ -82,12 +82,18 @@ window.onload = function() {
               <div class="vd-ifra mb-4">
                  <img src="https://i.ytimg.com/vi/P5biY6vWN4k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBykMukxtjWXC3E8YNxGjXyyj8egg">
               </div
+              
               <div class="desc">
                  <div class="details-playlist mt-2">
                       <span class="fw-bold">${formation.title}</span>
                       <p class="fw-bold">${formation.description}</p>
                       <p>${formation.content}</p>
                  </div>
+              <div class="desc fs-6">
+                  <div class="><span class="fw-bold">${formation.title}</span></div>
+                  <div class="><p class="">${formation.description}</p></div>
+                  <div><span class="fw-bold">Daaray Technologie</span></div>
+                  <div><p>${formation.content}</p></div>
               </div>
         `;
       

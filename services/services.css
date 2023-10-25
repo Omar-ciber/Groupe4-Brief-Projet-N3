@@ -10,6 +10,11 @@ a{
 }
 
 
+.navbar-toggler{
+    width: 10% !important;
+    margin-right: 5%;
+}
+
 /* navigation */
 .navigation{
     display: flex;

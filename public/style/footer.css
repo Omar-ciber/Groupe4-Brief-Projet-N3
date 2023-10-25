@@ -30,6 +30,7 @@ footer li a {
 footer {
     background-color: var(--orange) !important;
     margin-top: 8%;
+    padding-bottom: 2%;
 }
 
 .footerContent .logoFooter {

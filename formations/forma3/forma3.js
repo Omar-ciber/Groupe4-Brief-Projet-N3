@@ -50,16 +50,39 @@ const formations = [
         video: "https://www.youtube.com/embed/S3jCnAGwWqk",
         description: ":Les balises pour marquer l'importance  d'un texte",
         content: "Daaray Technologie",
-    }
+    },
+    {
+      id: 8, 
+      title: "Cours complet Html - Vidéo 8",
+      video: "https://www.youtube.com/embed/0VRwVvgc3VE",
+      description: "Vidéo 1: Structure d'une Balise HTML/Explication",
+      content: "Daaray Technologie",
+    },
+    {
+      id: 9, 
+      title: "Cours complet Html - Vidéo 9",
+      video: "https://www.youtube.com/embed/P5biY6vWN4k",
+      description: "Vidéo 4: Telecharger VsCode/Explication détaillée",
+      content: "Daaray Technologie",
+
+    },
+    {
+      id: 10, 
+      title: "Cours complet Html - Vidéo 10",
+      video: "https://www.youtube.com/embed/-QPyH5l5rRQ",
+      description: ":Les balises de h1 à h6 ,la balise br et la balise pre",
+      content: "Daaray Technologie",
+    },
+
 ] 
 
 const commentList = [
     {
-        text: 'Facile à comprendre.Merci beaucoup',
+        text: 'Merci, facile à comprendre avec des exemples précis',
         date: 'Aujourd\hui'
     },
     {
-        text: 'Contenu trés interessant',
+        text: 'Contenu trés interessant et des explications claires',
         date: 'Il y\a 2h'
     }
 ]
@@ -89,12 +112,6 @@ window.onload = function() {
                       <p class="fw-bold">${formation.description}</p>
                       <p>${formation.content}</p>
                  </div>
-              <div class="desc fs-6">
-                  <div class="><span class="fw-bold">${formation.title}</span></div>
-                  <div class="><p class="">${formation.description}</p></div>
-                  <div><span class="fw-bold">Daaray Technologie</span></div>
-                  <div><p>${formation.content}</p></div>
-              </div>
         `;
       
         formationCard.addEventListener('click', () => {
@@ -113,7 +130,7 @@ window.onload = function() {
         const commentEl = document.createElement('li');
         commentEl.className = 'comment'
         commentEl.innerHTML = `
-        <div class="detailComent d-flex bg-secondary-subtle p-2">
+        <div class="detailComent d-flex rounded-3 bg-secondary-subtle p-2" id="commentPart">
             <div class="persComent"><img src="image_forma3/P1.png" alt=""></div>
             <div class="textComent d-flex">
               <div class="text-left">
@@ -126,12 +143,12 @@ window.onload = function() {
                   <i class="fa-regular fa-thumbs-up"></i>
                   <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
                 </div>
-                <p class="fw-bold ms-5 ps-5">Repondre</p>
+                <p class="fw-bold ms-5 ps-5" style="color: #E94D1A;"><i class="bi bi-reply"></i>  Repondre</p>
               </div>
             </div>   
         </div>
         
-        <hr>
+        <hr class="border-3" style="color: #E94D1A;">
         <div class="commenter mb-3" id="commentDate">
            ${comment.date}
         </div>
@@ -168,7 +185,7 @@ window.onload = function() {
               <i class="fa-regular fa-thumbs-up"></i>
               <i class="fa-regular fa-thumbs-down fa-flip-horizontal"></i>
             </div>
-            <p class="fw-bold ms-5 ps-5">Repondre</p>
+            <p class="fw-bold ms-5 ps-5" style="color: #E94D1A;"><i class="bi bi-reply"></i>Repondre</p>
           </div>
         </div>   
     </div>

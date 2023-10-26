@@ -21,7 +21,7 @@
   transition: 1s ease;
 }
 
-#banner{
+/* #banner{
     background: linear-gradient(0deg, #0000008f, #0000008f), url("../../a-propos/image_a-propos/bcg_propos.png");
     height: 80vh;
     background-size: cover;
@@ -32,7 +32,7 @@
     color: white;
     margin-top: 0;
 
-}
+} */
 #banner .banner-texte{
     margin-left: 80px !important;
 }
@@ -44,7 +44,7 @@
 
 /* section bannière */
 .banniere {
-  background-image: url(../../../public/images/banniere-technologie-orange.jpg);
+  background-image: url("../../a-propos/image_a-propos/bcg_propos.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 4%;
@@ -67,6 +67,10 @@
 
 .banniere a {
   text-decoration: none;
+}
+
+nav .active{
+  color: var(--orange) !important;
 }
 
 .banniereContent .linkAccueil a {

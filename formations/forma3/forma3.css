@@ -20,17 +20,59 @@
 #banner .banner-texte{
     margin-left: 80px !important;
 }
+
+/* section bannière */
+.banniere {
+  background-image: url(../../public/images/banniere-technologie-orange.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+  margin-top: 0;
+}
+
+.banniereContent h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.banniereContent p {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.banniere a {
+  text-decoration: none;
+}
+
+.banniereContent .linkAccueil a {
+  color: white !important;
+}
+
+.banniereContent .linkPage a {
+  color: var(--orange);
+}
+
+/* section bannière */
 /* main */
+nav .active{
+    color: var(--orange) !important;
+}
 
 .has-search .form-control {
     padding-left: 2.375rem;
 }
 .input-group{
-    width: 65% !important;
-    
+    width: 62% !important;  
 }
 .topbouton .btn{
     background-color: var(--orange) !important;
+}
+#commentPart{
+    border: 1px solid var(--orange);
 }
 
 
@@ -77,13 +119,12 @@
  }
   /* ...coments.... */
  .sidebar-dvd{
-    border: 1px solid black;
+    border: 1px solid var(--orange);
     background-color: rgb(246, 242, 242);
     padding: 2%;
-    height: 500px;
+    height: 850px;
     border-radius: 2%;
-    margin: 0 auto;
-    overflow: scroll; 
+    overflow: auto !important; 
  }
 ul{
     padding: 0 !important;

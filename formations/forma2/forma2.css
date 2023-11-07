@@ -86,14 +86,17 @@ li a{
     border-radius: 0 0 0 100px;
 }
 
-
+nav .active{
+  color: var(--orange) !important;
+}
 
 
 .has-search .form-control {
     padding-left: 2.375rem;
 }
 .input-group{
-    width: 25% !important;
+    width: 40% !important;
+    /* margin: 0 auto; */
     
 }
 
@@ -108,12 +111,13 @@ li a{
     pointer-events: none;
     color: #aaa;
 }
-.card-content{
-  /* border: 1px solid green; */
-}
+/* .card-content{
+  border: 1px solid green;
+} */
 
 /* responsive card */
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 539px){
   .card-body{
     /* text-align: justify; */
   /* background: #000; */
@@ -122,7 +126,7 @@ li a{
 
   .card-title h5{
     font-size: 30px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
   }
   .card-body a{
   font-size: 11px;
@@ -139,7 +143,6 @@ li a{
   .input-group{
     width: 100% !important;
     box-shadow: 2px 2px 4px gray;
-
     
   }
   /* .inti{
@@ -164,22 +167,22 @@ li a{
   .card-body{
     /* text-align: justify; */
     font-size: 11px;
-   margin-top: -45%;
+    margin-top: -50%;
     /* color: aqua; */
     margin-left: 50%;
   }
   
   .card-body a{
-    font-size:14px !important;
+    font-size:15px !important;
     text-align: center;
    
   }
   .card-body p {
-    font-size:10px;
-    display: none;
+    font-size: 15px !important;
+    
   }
   .card-body h5{
-    font-size:24px;
+    font-size:20px !important;
     /* display: none; */
   }
   .carte_formation{
@@ -199,18 +202,19 @@ li a{
     
   }
   .card-body {
-    margin-top: 45%;
+    margin-top: 8%;
   }
   .card-body p {
-    font-size:10px;
-    display: none;
+    font-size:18px !important;
+    /* display: none; */
   }
   .card-body a{
-    font-size:14px !important;
+    font-size:18px !important;
     text-align: center;
-   
   }
+
 }
+
 
 [data-pagination] {
   font-size: 8pt;

@@ -93,7 +93,7 @@ window.onload = function() {
   const formationCards = document.getElementById("playlist");
 
   function loadVideo(formation) {
-      videoPlayer.innerHTML = `<iframe width="835" height="415" src="${formation.video}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>`;
+      videoPlayer.innerHTML = `<iframe width="830" height="415" src="${formation.video}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>`;
   }
 
   loadVideo(formations[0]);

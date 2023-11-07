@@ -191,8 +191,15 @@ nav .active{
   }
   .card-body p {
     font-size: 15px !important;
-    
+    }
   }
+@media (max-width: 768px) {
+   .card-content{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
   .card-body h5{
     font-size:20px !important;
     /* display: none; */
@@ -202,11 +209,6 @@ nav .active{
     flex-direction: column !important;
     /* background: #000; */
   }
-  /* .card-forma2{
-    border: 1px solid #ce1b1b;
-    height: 500px;
-
-  } */
 }
 @media screen and (min-width: 768px){
   .line{

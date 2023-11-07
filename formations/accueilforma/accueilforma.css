@@ -62,14 +62,53 @@ nav .active{
 #banner .banner-texte{
     margin-left: 80px !important;
 }
-/* @media screen and(max-width: 768px){
-    .imagefirst{
+/* responsive acceuil format */
+@media only screen and (max-width: 600px) {
+    .container{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+    }
+    .imagefirst img{
         width: 100%;
     }
-    .card-left img{
-        width: 200px !important;
+    .second{
+        display: flex;
+        flex-direction: column;
     }
-} */
+    .card-left img{
+     width: 165% !important;
+    
+    }
+    .card-right{
+        width: 100%;
+        margin-top: -2%;
+        font-size: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .card-right p{
+        font-size: 18px !important;
+    }
+    .formabouton{
+       /* background-color: #12d929; */
+        margin-top: 10% !important;
+        height: 15%;
+        width: 80%;
+
+    }
+    .formabouton a{
+        font-size: 15px;
+        margin: 0 auto;
+        border: none;
+        color: var(--orange);
+        height: 70px;
+        width: 70%;
+        background-color: white;
+    }
+
+  }
+
 
 
 
@@ -85,9 +124,7 @@ nav .active{
     border-bottom-right-radius: 20%;
     margin-top: 10%;
 }
-/* .card-right p{
 
-} */
 .formabouton{
     border: none;
     color: var(--orange);

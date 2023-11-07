@@ -109,6 +109,18 @@ nav .active{
     color: #aaa;
 }
 
+nav .active{
+  color: var(--orange) !important;
+}
+
+.banniereContent .linkAccueil a {
+  color: white !important;
+}
+
+.banniereContent .linkPage a {
+  color: var(--orange);
+}
+
 
 
 /* [data-pagination],
